@@ -3,7 +3,7 @@ workspace -fr "mayaAscii"             "scenes";
 workspace -fr "mayaBinary"            "scenes";
 workspace -fr "autoSave"              ".autosave";
 
-workspace -fr "images"                "images/cg";
+workspace -fr "images"                "media/cg";
 
 workspace -fr "sourceImages"          "images/textures";
 workspace -fr "3dPaintTextures"       "images/textures/3dPaintTextures";

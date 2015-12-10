@@ -7,6 +7,19 @@
     <dir basename="sources" username="pipeline" group="artist" perms="02775"/>
     <dir basename="supplied" username="pipeline" group="artist" perms="02775"/>
   </dir>
+  <!-- C L I P S   F O L D E R -->
+  <dir basename="onset" username="pipeline" group="artist" perms="02775">
+    <dir basename="images" username="pipeline" group="artist" perms="02775">
+      <dir basename="survey" username="pipeline" group="artist" perms="02775"/>
+      <dir basename="candid" username="pipeline" group="artist" perms="02775"/>
+      <dir basename="hdri" username="pipeline" group="artist" perms="02775"/>
+      <dir basename="texture" username="pipeline" group="artist" perms="02775"/>
+    </dir>
+    <dir basename="script_notes" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="call_sheets" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="scans" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="data" username="pipeline" group="artist" perms="02775"/>
+  </dir>
   <!-- C G   F O L D E R -->
   <dir basename="cg" username="pipeline" group="pipeline" perms="02755">
     <!-- R I G   F O L D E R -->
@@ -64,12 +77,6 @@
       <dir basename="prop" username="pipeline" group="artist" perms="02775"/>
     </dir>
     <dir basename="hdri" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="onset" username="pipeline" group="artist" perms="02775">
-      <dir basename="survey" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="candid" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="hdri" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="texture" username="pipeline" group="artist" perms="02775"/>
-    </dir>
     <dir basename="paint" username="pipeline" group="artist" perms="02775">
       <dir basename="ai" username="pipeline" group="artist" perms="02775"/>
       <dir basename="geo" username="pipeline" group="artist" perms="02775"/>

@@ -3,7 +3,7 @@
 <dirtt name="Production Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}" basename="production" username="pipeline" group="production" perms="02775">
   <!-- E D I T S   F O L D E R -->
   <dir basename="edits" username="pipeline" group="production" perms="02777">
-    <dir basename="_yyyy_mm_dd_template" username="pipeline" group="artist" perms="02777">
+    <dir basename="_YYYY-MM-DD_description" username="pipeline" group="artist" perms="02777">
       <dir basename="edl" username="pipeline" group="artist" perms="02775"/>
       <dir basename="movies" username="pipeline" group="artist" perms="02775"/>
       <dir basename="images" username="pipeline" group="artist" perms="02775"/>
@@ -11,7 +11,7 @@
   </dir>
   <!-- P O S T I N G S   F O L D E R -->
   <dir basename="postings" username="pipeline" group="production" perms="02777">
-    <dir basename="_yyyy_mm_dd_template" username="pipeline" group="artist" perms="02777">
+    <dir basename="_YYYY-MM-DD_description" username="pipeline" group="artist" perms="02777">
       <dir basename="other" username="pipeline" group="artist" perms="02775"/>
       <dir basename="movies" username="pipeline" group="artist" perms="02775"/>
       <dir basename="images" username="pipeline" group="artist" perms="02775"/>

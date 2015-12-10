@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
-<dirtt name="Sequence Media Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}/media" basename="{{sequence_name}}" username="pipeline" group="artist" perms="02755"/>
-<dirtt name="Sequence Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}/work" basename="{{sequence_name}}" username="pipeline" group="artist" perms="02755"/>
+<dirtt name="Project Sequence Tree" version="0.2.0" dirname="{{project_root}}" basename="{{project_path}}" username="pipeline" group="artist" perms="02755">
+    <dir basename="media" perms="02775" username="pipeline" group="artist">
+        <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="work" perms="02775" username="pipeline" group="artist">
+        <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="master/clip" perms="02775" username="pipeline" group="artist">
+        <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist">
+            <dir basename="comp" perms="02775" username="pipeline" group="artist"/>
+            <dir basename="precomp" perms="02775" username="pipeline" group="artist"/>
+            <dir basename="ref" perms="02775" username="pipeline" group="artist"/>
+            <dir basename="roto" perms="02775" username="pipeline" group="artist"/>
+            <dir basename="paint" perms="02775" username="pipeline" group="artist"/>
+            <dir basename="grade" perms="02775" username="pipeline" group="artist"/>
+            <dir basename="scans" perms="02775" username="pipeline" group="artist"/>
+        </dir>
+    </dir>
+</dirtt>

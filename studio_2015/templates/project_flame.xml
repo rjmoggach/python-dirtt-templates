@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<dirtt name="Flame Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}" basename="flame" username="pipeline" group="artist" perms="02775">
+    <dir basename="action" name="action" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="batch" name="batch" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="colourwarper" name="colourwarper" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="correct" name="correct" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="deform" name="deform" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="distort" name="distort" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="edl" name="edl" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="gmask" name="gmask" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="key" name="key" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="modularKeyer" name="modularKeyer" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="sparks" name="sparks" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="text" name="text" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+    <dir basename="timewarp" name="timewarp" perms="02775" username="pipeline" group="artist">
+        <dir basename="flame" name="flame" perms="02775" username="pipeline" group="artist"/>
+    </dir>
+</dirtt>

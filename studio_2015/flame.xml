@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<dirtt name="Flame Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}" basename="flame" username="pipeline" group="artist" perms="02777">
+    <dir basename="2dtransform" group="wheel" name="2dtransform" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="3dblur" group="wheel" name="3dblur" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="aaf" group="wheel" name="aaf" perms="0777" username="rob"/>
+    <dir basename="action" group="wheel" name="action" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="lightbox" group="wheel" name="lightbox" perms="0777" username="rob">
+            <dir basename="EXAMPLES" group="wheel" name="EXAMPLES" perms="0777" username="rob"/>
+        </dir>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob">
+            <dir basename="LENSFLARE_CREATIVE" group="wheel" name="LENSFLARE_CREATIVE" perms="0777" username="rob"/>
+            <dir basename="LENSFLARE_REALISTIC" group="wheel" name="LENSFLARE_REALISTIC" perms="0777" username="rob"/>
+        </dir>
+        <dir basename="transitions" group="wheel" name="transitions" perms="0777" username="rob">
+            <dir basename="CONCEAL" group="wheel" name="CONCEAL" perms="0777" username="rob"/>
+            <dir basename="L_CONCEAL" group="wheel" name="L_CONCEAL" perms="0777" username="rob"/>
+            <dir basename="MISC" group="wheel" name="MISC" perms="0777" username="rob"/>
+            <dir basename="PUSH" group="wheel" name="PUSH" perms="0777" username="rob"/>
+            <dir basename="SPIN" group="wheel" name="SPIN" perms="0777" username="rob"/>
+            <dir basename="SQUEEZE" group="wheel" name="SQUEEZE" perms="0777" username="rob"/>
+        </dir>
+    </dir>
+    <dir basename="audio" group="wheel" name="audio" perms="0777" username="rob">
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob">
+            <dir basename="AJA" group="wheel" name="AJA" perms="0777" username="rob"/>
+            <dir basename="ALSA" group="wheel" name="ALSA" perms="0777" username="rob"/>
+            <dir basename="Dvs" group="wheel" name="Dvs" perms="0777" username="rob"/>
+            <dir basename="Lucid" group="wheel" name="Lucid" perms="0777" username="rob"/>
+            <dir basename="Sgi" group="wheel" name="Sgi" perms="0777" username="rob"/>
+        </dir>
+        <dir basename="shaders" group="wheel" name="shaders" perms="0777" username="root"/>
+        <dir basename="tmp" group="wheel" name="tmp" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="automatte" group="wheel" name="automatte" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="autostabilize" group="wheel" name="autostabilize" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="average" group="wheel" name="average" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="axis" group="wheel" name="axis" perms="0777" username="rob"/>
+    <dir basename="batch" group="wheel" name="batch" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="log" group="wheel" name="log" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="batchclip" group="wheel" name="batchclip" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="blendComp" group="wheel" name="blendComp" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="blur" group="wheel" name="blur" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob">
+            <dir basename="DEFOCUS" group="wheel" name="DEFOCUS" perms="0777" username="rob"/>
+        </dir>
+    </dir>
+    <dir basename="bumpDisplace" group="wheel" name="bumpDisplace" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="burnin" group="wheel" name="burnin" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="ccurves" group="wheel" name="ccurves" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="cfg" group="wheel" name="cfg" perms="0777" username="rob">
+        <dir basename="macosx-x86_64" group="wheel" name="macosx-x86_64" perms="0777" username="rob">
+            <dir basename="template" group="wheel" name="template" perms="0777" username="rob"/>
+        </dir>
+    </dir>
+    <dir basename="check" group="wheel" name="check" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="clamp" group="wheel" name="clamp" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="colourframe" group="wheel" name="colourframe" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pattern" group="wheel" name="pattern" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="colourwarper" group="wheel" name="colourwarper" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="combine" group="wheel" name="combine" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="comp" group="wheel" name="comp" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="composite" group="wheel" name="composite" perms="0777" username="rob">
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="compound" group="wheel" name="compound" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="correct" group="wheel" name="correct" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="CreatedBy" group="wheel" name="CreatedBy" perms="0666" username="rob"/>
+    <dir basename="damage" group="wheel" name="damage" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob">
+            <dir basename="ANALOG" group="wheel" name="ANALOG" perms="0777" username="rob"/>
+            <dir basename="DIGITAL" group="wheel" name="DIGITAL" perms="0777" username="rob"/>
+            <dir basename="FILM" group="wheel" name="FILM" perms="0777" username="rob"/>
+        </dir>
+        <dir basename="textures" group="wheel" name="textures" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="deal" group="wheel" name="deal" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="deform" group="wheel" name="deform" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="degrain" group="wheel" name="degrain" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="deinterlace" group="wheel" name="deinterlace" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="deliverables" group="wheel" name="deliverables" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="lut" group="wheel" name="lut" perms="0777" username="rob">
+            <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        </dir>
+    </dir>
+    <dir basename="denoise" group="wheel" name="denoise" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="depthOfField" group="wheel" name="depthOfField" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="difference" group="wheel" name="difference" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="dissolve" group="wheel" name="dissolve" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="distort" group="wheel" name="distort" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="dve" group="wheel" name="dve" perms="0777" username="rob">
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="edge" group="wheel" name="edge" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="edgeDetect" group="wheel" name="edgeDetect" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="edl" group="wheel" name="edl" perms="0777" username="rob"/>
+    <dir basename="export" group="wheel" name="export" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob">
+            <dir basename="audio_file" group="wheel" name="audio_file" perms="0777" username="rob"/>
+            <dir basename="file_sequence" group="wheel" name="file_sequence" perms="0777" username="rob"/>
+            <dir basename="movie_file" group="wheel" name="movie_file" perms="0777" username="rob"/>
+            <dir basename="sequence_publish" group="wheel" name="sequence_publish" perms="0777" username="rob"/>
+        </dir>
+    </dir>
+    <dir basename="exposure" group="wheel" name="exposure" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="expressions" group="wheel" name="expressions" perms="0777" username="rob"/>
+    <dir basename="fieldmerge" group="wheel" name="fieldmerge" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="filmrestore" group="wheel" name="filmrestore" perms="0777" username="rob">
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="filter" group="wheel" name="filter" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="flip" group="wheel" name="flip" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="gatewayImport" group="wheel" name="gatewayImport" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="glow" group="wheel" name="glow" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="gmask" group="wheel" name="gmask" perms="0777" username="rob">
+        <dir basename="default" group="wheel" name="default" perms="0777" username="rob"/>
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob"/>
+        <dir basename="transitions" group="wheel" name="transitions" perms="0777" username="rob">
+            <dir basename="SMPTE" group="wheel" name="SMPTE" perms="0777" username="rob"/>
+        </dir>
+    </dir>
+    <dir basename="gradient" group="wheel" name="gradient" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="guides" group="wheel" name="guides" perms="0777" username="rob">
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="histo2d" group="wheel" name="histo2d" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="images" group="wheel" name="images" perms="0777" username="rob"/>
+    <dir basename="import" group="wheel" name="import" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="interlace" group="wheel" name="interlace" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="key" group="wheel" name="key" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="keyer3d" group="wheel" name="keyer3d" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="keyerChannel" group="wheel" name="keyerChannel" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="keyerHLS" group="wheel" name="keyerHLS" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="keyerRGB" group="wheel" name="keyerRGB" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="keyerRGBCMYL" group="wheel" name="keyerRGBCMYL" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="keyerYUV" group="wheel" name="keyerYUV" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="lensDistort" group="wheel" name="lensDistort" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="letterbox" group="wheel" name="letterbox" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="logicop" group="wheel" name="logicop" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="logo" group="wheel" name="logo" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="lumkey" group="wheel" name="lumkey" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="lut" group="wheel" name="lut" perms="0777" username="rob">
+        <dir basename="lut_setup" group="wheel" name="lut_setup" perms="0777" username="rob">
+            <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        </dir>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="lutfloat" group="wheel" name="lutfloat" perms="0777" username="rob"/>
+    <dir basename="mapConvert" group="wheel" name="mapConvert" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="mask" group="wheel" name="mask" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="masterkey" group="wheel" name="masterkey" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="matchbox" group="wheel" name="matchbox" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob"/>
+        <dir basename="shaders" group="wheel" name="shaders" perms="0777" username="rob">
+            <dir basename="COLOUR" group="wheel" name="COLOUR" perms="0777" username="rob"/>
+            <dir basename="COMPOSITING" group="wheel" name="COMPOSITING" perms="0777" username="rob"/>
+            <dir basename="EFFECTS" group="wheel" name="EFFECTS" perms="0777" username="rob"/>
+            <dir basename="EXAMPLES" group="wheel" name="EXAMPLES" perms="0777" username="rob"/>
+            <dir basename="FILTERS" group="wheel" name="FILTERS" perms="0777" username="rob"/>
+            <dir basename="LOOKS" group="wheel" name="LOOKS" perms="0777" username="rob"/>
+            <dir basename="MOTIONGRAPHICS" group="wheel" name="MOTIONGRAPHICS" perms="0777" username="rob"/>
+            <dir basename="TRANSITIONS" group="wheel" name="TRANSITIONS" perms="0777" username="rob"/>
+            <dir basename="UTILITIES" group="wheel" name="UTILITIES" perms="0777" username="rob"/>
+        </dir>
+        <dir basename="transitions" group="wheel" name="transitions" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="mattecurves" group="wheel" name="mattecurves" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="mediaImport" group="wheel" name="mediaImport" perms="0777" username="rob">
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="mix" group="wheel" name="mix" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="modularKeyer" group="wheel" name="modularKeyer" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="startup_setups" group="wheel" name="startup_setups" perms="0777" username="rob">
+            <dir basename="Sample_Channel" group="wheel" name="Sample_Channel" perms="0777" username="rob"/>
+            <dir basename="Sample_Default_MK" group="wheel" name="Sample_Default_MK" perms="0777" username="rob"/>
+            <dir basename="Sample_GMask" group="wheel" name="Sample_GMask" perms="0777" username="rob"/>
+            <dir basename="Sample_GMaskTracer" group="wheel" name="Sample_GMaskTracer" perms="0777" username="rob"/>
+            <dir basename="Sample_HLS" group="wheel" name="Sample_HLS" perms="0777" username="rob"/>
+            <dir basename="Sample_Luminance" group="wheel" name="Sample_Luminance" perms="0777" username="rob"/>
+            <dir basename="Sample_MasterK" group="wheel" name="Sample_MasterK" perms="0777" username="rob"/>
+            <dir basename="Sample_RGB" group="wheel" name="Sample_RGB" perms="0777" username="rob"/>
+            <dir basename="Sample_RGBCMYL" group="wheel" name="Sample_RGBCMYL" perms="0777" username="rob"/>
+            <dir basename="Sample_YUV" group="wheel" name="Sample_YUV" perms="0777" username="rob"/>
+        </dir>
+    </dir>
+    <dir basename="mono" group="wheel" name="mono" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="morf" group="wheel" name="morf" perms="0777" username="rob">
+        <dir basename="magnet" group="wheel" name="magnet" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="motif" group="wheel" name="motif" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="motionAnalyse" group="wheel" name="motionAnalyse" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="motionBlur" group="wheel" name="motionBlur" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="note" group="wheel" name="note" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="optics" group="wheel" name="optics" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="output" group="wheel" name="output" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="paint" group="wheel" name="paint" perms="0777" username="rob">
+        <dir basename="autopaint" group="wheel" name="autopaint" perms="0777" username="rob"/>
+        <dir basename="brush" group="wheel" name="brush" perms="0777" username="rob"/>
+        <dir basename="cutout" group="wheel" name="cutout" perms="0777" username="rob"/>
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="geometry" group="wheel" name="geometry" perms="0777" username="rob"/>
+        <dir basename="mask" group="wheel" name="mask" perms="0777" username="rob"/>
+        <dir basename="palette" group="wheel" name="palette" perms="0777" username="rob"/>
+        <dir basename="picture" group="wheel" name="picture" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="set" group="wheel" name="set" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="particules" group="wheel" name="particules" perms="0777" username="rob"/>
+    <dir basename="path" group="wheel" name="path" perms="0777" username="rob"/>
+    <dir basename="pixelspread" group="wheel" name="pixelspread" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="posterize" group="wheel" name="posterize" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="pulldown" group="wheel" name="pulldown" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="quickcomp" group="wheel" name="quickcomp" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="recursiveOps" group="wheel" name="recursiveOps" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="ReferencedBy" group="wheel" name="ReferencedBy" perms="0666" username="rob"/>
+    <dir basename="regrain" group="wheel" name="regrain" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="repeat" group="wheel" name="repeat" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="resize" group="wheel" name="resize" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="separate" group="wheel" name="separate" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="sparks" group="wheel" name="sparks" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="stabilizer" group="wheel" name="stabilizer" perms="0777" username="rob">
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="status" group="wheel" name="status" perms="0777" username="rob"/>
+    <dir basename="stereo" group="wheel" name="stereo" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="stereoAnaglyph" group="wheel" name="stereoAnaglyph" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="stereoInterlace" group="wheel" name="stereoInterlace" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="stereoToolbox" group="wheel" name="stereoToolbox" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="stylize" group="wheel" name="stylize" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+        <dir basename="presets" group="wheel" name="presets" perms="0777" username="rob">
+            <dir basename="COMIC" group="wheel" name="COMIC" perms="0777" username="rob"/>
+            <dir basename="PAINT" group="wheel" name="PAINT" perms="0777" username="rob"/>
+            <dir basename="PRINT" group="wheel" name="PRINT" perms="0777" username="rob"/>
+            <dir basename="SKETCH" group="wheel" name="SKETCH" perms="0777" username="rob"/>
+        </dir>
+        <dir basename="textures" group="wheel" name="textures" perms="0777" username="rob">
+            <dir basename="brush" group="wheel" name="brush" perms="0777" username="rob"/>
+            <dir basename="stroke" group="wheel" name="stroke" perms="0777" username="rob"/>
+        </dir>
+    </dir>
+    <dir basename="substance" group="wheel" name="substance" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="synColor" group="wheel" name="synColor" perms="0777" username="rob">
+        <dir basename="transforms" group="wheel" name="transforms" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="text" group="wheel" name="text" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="timewarp" group="wheel" name="timewarp" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="tmp" group="wheel" name="tmp" perms="0777" username="rob"/>
+    <dir basename="vectorViewer" group="wheel" name="vectorViewer" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="viewing" group="wheel" name="viewing" perms="0777" username="rob">
+        <dir basename="flame" group="wheel" name="flame" perms="0777" username="rob"/>
+        <dir basename="pref" group="wheel" name="pref" perms="0777" username="rob"/>
+    </dir>
+    <dir basename="wipe" group="wheel" name="wipe" perms="0777" username="rob"/>
+    <dir basename="xml" group="wheel" name="xml" perms="0777" username="rob"/>
+</dirtt>

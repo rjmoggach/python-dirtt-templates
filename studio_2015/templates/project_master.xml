@@ -5,7 +5,9 @@
   <dir basename="clip" username="pipeline" group="artist" perms="02775">
     <dir basename="elements" username="pipeline" group="artist" perms="02775"/>
     <dir basename="sources" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="supplied" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="supplied" username="pipeline" group="artist" perms="02775">
+      <dir basename="_YYYY-MM-DD_description" name="_YYYY-MM-DD_description"/>
+    </dir>
   </dir>
   <!-- C L I P S   F O L D E R -->
   <dir basename="onset" username="pipeline" group="artist" perms="02775">

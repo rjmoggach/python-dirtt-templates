@@ -2,12 +2,26 @@
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
 <dirtt name="Media Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}" basename="media" username="pipeline" group="artist" perms="02775">
 
-  <!-- E L E M E N T S   F O L D E R -->
-  <dir name="Elements Directory" basename="elements" username="pipeline" group="artist" perms="02775"/>
-
-  <!-- S U P P L I E D   F O L D E R -->
-  <dir name="Supplied Media Directory" basename="supplied" username="pipeline" group="artist" perms="02775">
-    <dir name="Supplied Template" basename="_YYYY-MM-DD_description" username="pipeline" group="artist" perms="02775"/>
+  <!-- C L I P S   F O L D E R -->
+  <dir basename="clip" username="pipeline" group="artist" perms="02775">
+    <dir basename="sources" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="elements" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="supplied" username="pipeline" group="artist" perms="02775">
+      <dir basename="_YYYY-MM-DD_description" name="_YYYY-MM-DD_description"/>
+    </dir>
+    <dir basename="work" username="pipeline" group="artist" perms="02775"/>
   </dir>
+
+  <dir basename="publish" username="pipeline" group="artist" perms="02777">
+    <dir basename="elements" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="sources" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="work" username="pipeline" group="artist" perms="02775"/>
+  </dir>
+
+  <dir basename="supplied" username="pipeline" group="artist" perms="02775">
+    <dir basename="_YYYY-MM-DD_description" username="pipeline" group="artist" perms="02775"/>
+  </dir>
+
+  <dir basename="work" username="pipeline" group="artist" perms="02775"/>
 
 </dirtt>

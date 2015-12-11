@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
 <dirtt name="Project Sequence Tree" version="0.2.0" dirname="{{project_root}}" basename="{{project_path}}" username="pipeline" group="artist" perms="02755">
-    <dir basename="media" perms="02775" username="pipeline" group="artist">
+
+    <dir basename="media/work" perms="02775" username="pipeline" group="artist">
         <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
     </dir>
+
     <dir basename="work" perms="02775" username="pipeline" group="artist">
         <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
     </dir>
-    <dir basename="master/clip" perms="02775" username="pipeline" group="artist">
+
+    <dir basename="media/clip/work" perms="02775" username="pipeline" group="artist">
         <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist">
             <dir basename="comp" perms="02775" username="pipeline" group="artist"/>
             <dir basename="precomp" perms="02775" username="pipeline" group="artist"/>
@@ -18,4 +21,18 @@
             <dir basename="scans" perms="02775" username="pipeline" group="artist"/>
         </dir>
     </dir>
+
+    <dir basename="flame/action/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/batch/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/colourwarper/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/correct/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/deform/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/distort/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/gmask/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/key/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/modularKeyer/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/sparks/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/text/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/timewarp/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+
 </dirtt>

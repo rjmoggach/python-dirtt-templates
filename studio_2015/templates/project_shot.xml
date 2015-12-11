@@ -3,7 +3,23 @@
 
 <dirtt name="Project Root" version="0.2.0" dirname="{{project_root}}" basename="{{project_path}}" username="pipeline" group="artist" perms="02775">
 
-  <dir name="Shot Media Tree" basename="media/{{sequence_name}}/{{shot_name}}"  username="pipeline" group="artist" perms="02775">
+
+    <dir basename="flame/action/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/batch/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/colourwarper/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/correct/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/deform/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/distort/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/gmask/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/key/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/modularKeyer/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/sparks/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/text/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/timewarp/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
+
+
+
+  <dir name="Shot Media Tree" basename="media/work/{{sequence_name}}/{{shot_name}}"  username="pipeline" group="artist" perms="02775">
     <!-- A U D I O   F O L D E R -->
     <dir basename="audio" username="pipeline" group="artist" perms="02775"/>
 
@@ -34,15 +50,15 @@
 
   <dir name="Shot Work Tree" basename="work/{{sequence_name}}/{{shot_name}}"  username="pipeline" group="artist" perms="02775">
     <!-- A U D I O   F O L D E R -->
-    <link basename="audio" ref="../../../media/{{sequence_name}}/{{shot_name}}/audio"/>
+    <link basename="audio" ref="../../../media/work/{{sequence_name}}/{{shot_name}}/audio"/>
 
     <!-- I M A G E S   F O L D E R -->
     <dir basename="images" username="pipeline" group="supervisor" perms="02775">
       <link basename="master" ref="../../../../master/images"/>
-      <link basename="cg" ref="../../../../media/{{sequence_name}}/{{shot_name}}/cg"/>
-      <link basename="2d" ref="../../../../media/{{sequence_name}}/{{shot_name}}/2d"/>
-      <link basename="ref" ref="../../../../media/{{sequence_name}}/{{shot_name}}/ref"/>
-      <link basename="design" ref="../../../../media/{{sequence_name}}/{{shot_name}}/design"/>
+      <link basename="cg" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/cg"/>
+      <link basename="2d" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/2d"/>
+      <link basename="ref" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/ref"/>
+      <link basename="design" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/design"/>
       <dir basename="textures" username="pipeline" group="artist" perms="02775">
         <dir basename="3dPaintTextures" username="pipeline" group="artist" perms="02775"/>
       </dir>
@@ -126,7 +142,7 @@
     <dir name="Shot Volumetrics Folder" basename="volumetrics" username="pipeline" group="artist" perms="02755">
       <link basename="particles" ref="../data/volumetrics/particles/"/>
       <link basename="cache" ref="../data/volumetrics/cache/"/>
-      <link basename="render" ref="../../../../media/{{sequence_name}}/{{shot_name}}/cg/volumetrics/"/>
+      <link basename="render" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/cg/volumetrics/"/>
       <dir basename="options" username="pipeline" group="artist" perms="02775"/>
       <dir basename="scenes" username="pipeline" group="artist" perms="02775"/>
     </dir>

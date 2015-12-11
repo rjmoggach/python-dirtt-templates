@@ -31,6 +31,6 @@
   </dir>
 
 <!-- W O R K   F O L D E R -->
-  <dir name="Project Work Directory" basename="work" username="pipeline" group="pipeline" perms="02755"/>
+  <dir name="Project Sequences Directory" basename="sequences" username="pipeline" group="pipeline" perms="02775"/>
 
 </dirtt>

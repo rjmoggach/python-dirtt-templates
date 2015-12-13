@@ -2,25 +2,21 @@
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
 <dirtt name="Project Sequence Tree" version="0.2.0" dirname="{{project_root}}" basename="{{project_path}}" username="pipeline" group="artist" perms="02755">
 
-    <dir basename="media/work" perms="02775" username="pipeline" group="artist">
-        <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
-    </dir>
-
-    <dir basename="work" perms="02775" username="pipeline" group="artist">
-        <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
-    </dir>
-
-    <dir basename="media/clip/work" perms="02775" username="pipeline" group="artist">
-        <dir basename="{{sequence_name}}" perms="02775" username="pipeline" group="artist">
-            <dir basename="comp" perms="02775" username="pipeline" group="artist"/>
-            <dir basename="precomp" perms="02775" username="pipeline" group="artist"/>
-            <dir basename="ref" perms="02775" username="pipeline" group="artist"/>
-            <dir basename="roto" perms="02775" username="pipeline" group="artist"/>
-            <dir basename="paint" perms="02775" username="pipeline" group="artist"/>
-            <dir basename="grade" perms="02775" username="pipeline" group="artist"/>
-            <dir basename="scans" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="clip/work/{{sequence_name}}" perms="02775" username="pipeline" group="artist">
+        <dir basename="cg" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="comp" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="design" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="ref" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="roto" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="plate" username="pipeline" group="artist" perms="02775">
+            <dir basename="transcode" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="grade" username="pipeline" group="artist" perms="02775"/>
         </dir>
     </dir>
+
+    <dir basename="media/work/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+
+    <dir basename="work/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
 
     <dir basename="flame/action/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
     <dir basename="flame/batch/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
@@ -34,5 +30,13 @@
     <dir basename="flame/sparks/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
     <dir basename="flame/text/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
     <dir basename="flame/timewarp/flame/{{sequence_name}}" perms="02775" username="pipeline" group="artist"/>
+    <dir basename="flame/export/presets" perms="02775" username="pipeline" group="artist">
+        <dir basename="audio_file" perms="02775" username="pipeline" group="artist"/>
+        <dir basename="file_sequence" perms="02775" username="pipeline" group="artist"/>
+        <dir basename="movie_file" perms="02775" username="pipeline" group="artist"/>
+        <dir basename="sequence_publish" perms="02775" username="pipeline" group="artist">
+            <file basename="{{project_path}} {{sequence_name}} Source Publish.xml" href="/studio/tools/var/dirtt/templates/studio_2015/templates/file_templates/flame_seq_grade_publish_dpx.xml"/>
+        </dir>
+    </dir>
 
 </dirtt>

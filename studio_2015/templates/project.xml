@@ -2,22 +2,27 @@
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
 <dirtt name="Project Tree" version="0.2.0" dirname="{{project_root}}" basename="{{project_path}}" username="pipeline" group="artist" perms="02755" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-<!-- A S S E T S   F O L D E R -->
+<!--M A S T E R   F O L D E R -->
   <dir name="Project Master Directory" basename="master" username="pipeline" group="pipeline" perms="02755" xmlns:xi="http://www.w3.org/2001/XInclude">
     <xi:include href="project_master.xml" parse="xml"/>
+  </dir>
+
+<!--F L A M E   F O L D E R -->
+  <dir basename="flame" username="pipeline" group="artist" perms="02777" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="project_flame.xml" parse="xml"/>
   </dir>
 
 <!-- D R O P B O X   F O L D E R -->
   <dir name="Project Dropbox Directory" basename="dropbox" username="pipeline" group="artist" perms="02777"/>
 
-<!-- F L A M E   F O L D E R -->
-  <dir name="Project Flame Directory" basename="flame" username="pipeline" group="artist" perms="02777" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <xi:include href="project_flame.xml" parse="xml"/>
+<!-- M E D I A   F O L D E R -->
+  <dir name="Project Media Directory" basename="media" username="pipeline" group="pipeline" perms="02775" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="project_media.xml" parse="xml"/>
   </dir>
 
-<!-- M E D I A   F O L D E R -->
-  <dir name="Project Media Directory" basename="media" username="pipeline" group="pipeline" perms="02755" xmlns:xi="http://www.w3.org/2001/XInclude">
-    <xi:include href="project_media.xml" parse="xml"/>
+<!-- C L I P   F O L D E R -->
+  <dir name="Project Clip Directory" basename="clip" username="pipeline" group="pipeline" perms="02775" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xi:include href="project_clip.xml" parse="xml"/>
   </dir>
 
 <!-- O N L I N E   F O L D E R -->
@@ -31,6 +36,6 @@
   </dir>
 
 <!-- W O R K   F O L D E R -->
-  <dir name="Project Sequences Directory" basename="sequences" username="pipeline" group="pipeline" perms="02775"/>
+  <dir name="Project Work Directory" basename="work" username="pipeline" group="pipeline" perms="02775"/>
 
 </dirtt>

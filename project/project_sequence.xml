@@ -35,7 +35,7 @@
         <dir basename="file_sequence" perms="02775" username="pipeline" group="artist"/>
         <dir basename="movie_file" perms="02775" username="pipeline" group="artist"/>
         <dir basename="sequence_publish" perms="02775" username="pipeline" group="artist">
-            <file basename="{{project_path}} {{sequence_name}} Source Publish.xml" href="/studio/tools/var/dirtt/templates/studio_2015/templates/file_templates/flame_seq_grade_publish_dpx.xml"/>
+            <file basename="{{project_path}} {{sequence_name}} Source Publish.xml" href="/studio/tools/var/dirtt/templates/project/files/flame_seq_grade_publish_dpx.xml"/>
         </dir>
     </dir>
 

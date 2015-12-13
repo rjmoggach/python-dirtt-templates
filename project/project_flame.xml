@@ -44,7 +44,7 @@
         <dir basename="file_sequence" perms="02775" username="pipeline" group="artist"/>
         <dir basename="movie_file" perms="02775" username="pipeline" group="artist"/>
         <dir basename="sequence_publish" perms="02775" username="pipeline" group="artist">
-            <file basename="Source Camera Media Transcode Publish.xml" href="/studio/tools/var/dirtt/templates/studio_2015/templates/file_templates/flame_camera_media_transcode_publish.xml"/>
+            <file basename="Source Camera Media Transcode Publish.xml" href="/studio/tools/var/dirtt/templates/project/files/flame_camera_media_transcode_publish.xml"/>
         </dir>
     </dir>
 </dirtt>

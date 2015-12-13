@@ -12,9 +12,9 @@
             <commit>Original</commit>
             <flatten>NoChange</flatten>
             <exportHandles>True</exportHandles>
-            <nbHandles>20</nbHandles>
+            <nbHandles>15</nbHandles>
         </videoMedia>
-        <includeAudio>False</includeAudio>
+        <includeAudio>True</includeAudio>
         <exportAudio>False</exportAudio>
         <audioMedia>
             <mediaFileType>audio</mediaFileType>
@@ -28,7 +28,7 @@
         <fileType>Dpx</fileType>
         <codec>923680</codec>
         <codecProfile/>
-        <namePattern>media/transcode/&lt;tape&gt;/&lt;segment name&gt;/&lt;width&gt;x&lt;height&gt;/&lt;extension&gt;/&lt;segment name&gt;.</namePattern>
+        <namePattern>media/transcode/&lt;tape&gt;/&lt;segment name&gt;/&lt;segment&gt;/&lt;width&gt;x&lt;height&gt;/&lt;extension&gt;/&lt;segment name&gt;.</namePattern>
         <compressionQuality>50</compressionQuality>
         <transferCharacteristic>4</transferCharacteristic>
         <colorimetricSpecification>4</colorimetricSpecification>
@@ -53,6 +53,11 @@
         <useTimecode>True</useTimecode>
     </name>
     <createOpenClip>
-        <namePattern>clip/transcode/&lt;tape&gt;/&lt;segment name&gt;</namePattern>
+        <namePattern>clip/transcode/&lt;tape&gt;/&lt;segment name&gt;_&lt;segment&gt;.</namePattern>
+        <version>
+            <index>0</index>
+            <padding>2</padding>
+            <name>v&lt;version&gt;</name>
+        </version>
     </createOpenClip>
 </preset>

@@ -4,11 +4,16 @@
 
   <dir basename="elements" username="pipeline" group="artist" perms="02775"/>
 
-  <dir basename="supplied" username="pipeline" group="artist" perms="02775">
-    <dir basename="_YYYY-MM-DD_description" name="_YYYY-MM-DD_description"/>
+  <dir basename="roto" username="pipeline" group="artist" perms="02775"/>
+
+  <dir basename="source" username="pipeline" group="artist" perms="02775">
+    <dir basename="transcode" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="grade" username="pipeline" group="artist" perms="02775"/>
   </dir>
 
-  <dir basename="transcode" username="pipeline" group="artist" perms="02775"/>
+  <dir basename="supplied" username="pipeline" group="artist" perms="02775">
+    <dir basename="YYYY-MM-DD_description" name="YYYY-MM-DD_description"/>
+  </dir>
 
   <dir basename="work" username="pipeline" group="artist" perms="02775"/>
 

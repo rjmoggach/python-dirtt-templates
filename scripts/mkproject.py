@@ -20,8 +20,9 @@ from dirtt import DirectoryTreeHandler, list_available_templates
 from dirtt.util.template import return_placeholders
 
 ENABLED_USERS = [0,1111]
-
-TEMPLATE_DIR="/studio/tools/var/dirtt/templates/studio_2015/templates"
+TEMPLATE_ROOT="/studio/tools/var/dirtt/templates"
+TEMPLATE_ROOT="/Users/rob/Code/python-dirtt-templates"
+TEMPLATE_DIR=os.path.join(TEMPLATE_ROOT,"project")
 PROJECT_ROOT="/studio/jobs"
 PROJECT_TEMPLATE=os.path.join(TEMPLATE_DIR,"project.xml")
 
@@ -75,4 +76,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

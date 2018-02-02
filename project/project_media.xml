@@ -2,19 +2,28 @@
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
 <dirtt name="Media Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}" basename="media" username="pipeline" group="artist" perms="02775">
 
-  <dir basename="elements" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="elements" username="pipeline" group="artist" perms="02775"/>
 
-  <dir basename="roto" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="roto" username="pipeline" group="artist" perms="02775"/>
 
-  <dir basename="source" username="pipeline" group="artist" perms="02775">
-    <dir basename="transcode" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="grade" username="pipeline" group="artist" perms="02775"/>
-  </dir>
+    <dir basename="source" username="pipeline" group="artist" perms="02775">
+        <dir basename="YYYY-MM-DD_description" username="pipeline" group="artist" perms="02775"/>
+    </dir>
 
-  <dir basename="supplied" username="pipeline" group="artist" perms="02775">
-    <dir basename="YYYY-MM-DD_description" username="pipeline" group="artist" perms="02775"/>
-  </dir>
+    <dir basename="supplied" username="pipeline" group="artist" perms="02775">
+        <dir basename="YYYY-MM-DD_description" username="pipeline" group="artist" perms="02775"/>
+    </dir>
 
-  <dir basename="work" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="transcode" username="pipeline" group="artist" perms="02775">
+        <dir basename="YYYY-MM-DD_description" username="pipeline" group="artist" perms="02775"/>
+        </dir>
+    </dir>
+
+    <dir basename="grade" username="pipeline" group="artist" perms="02775">
+        <dir basename="YYYY-MM-DD_description" username="pipeline" group="artist" perms="02775"/>
+        </dir>
+    </dir>
+
+    <dir basename="work" username="pipeline" group="artist" perms="02775"/>
 
 </dirtt>

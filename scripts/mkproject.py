@@ -21,7 +21,7 @@ from dirtt.util.template import return_placeholders
 
 ENABLED_USERS = [0,1111]
 TEMPLATE_ROOT="/studio/tools/var/dirtt/templates"
-TEMPLATE_ROOT="/Users/rob/Code/python-dirtt-templates"
+# TEMPLATE_ROOT="/Users/rob/Code/python-dirtt-templates"
 TEMPLATE_DIR=os.path.join(TEMPLATE_ROOT,"project")
 PROJECT_ROOT="/studio/jobs"
 PROJECT_TEMPLATE=os.path.join(TEMPLATE_DIR,"project.xml")

@@ -53,7 +53,7 @@
         <useTimecode>True</useTimecode>
     </name>
     <createOpenClip>
-        <namePattern>clip/source/transcode/&lt;tape&gt;/&lt;segment name&gt;_&lt;segment&gt;.</namePattern>
+        <namePattern>media/clip/source/transcode/&lt;tape&gt;/&lt;segment name&gt;_&lt;segment&gt;.</namePattern>
         <version>
             <index>0</index>
             <padding>2</padding>

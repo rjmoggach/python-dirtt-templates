@@ -22,6 +22,7 @@ from dirtt.util.template import return_placeholders
 ENABLED_USERS = [0,1111]
 
 TEMPLATE_DIR="/studio/tools/var/dirtt/templates/studio_2015/templates"
+TEMPLATE_DIR="/studio/tools/var/dirtt/templates/project"
 PROJECT_ROOT="/studio/jobs"
 PROJECT_TEMPLATE=os.path.join(TEMPLATE_DIR,"project.xml")
 SEQUENCE_TEMPLATE=os.path.join(TEMPLATE_DIR,"project_sequence.xml")

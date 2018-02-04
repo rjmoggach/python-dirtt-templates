@@ -1,35 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
 <dirtt name="Production Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}" basename="production" username="pipeline" group="production" perms="02775">
+
+<!-- O N L I N E   F O L D E R -->
+    <dir name="Project Online Directory" basename="online" username="pipeline" group="artist" perms="02775" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <xi:include href="project_online.xml" parse="xml"/>
+    </dir>
+
   <!-- C R E A T I V E   F O L D E R -->
   <dir basename="Creative" username="pipeline" group="production" perms="02777">
     <link basename="Scripts" ref="../Business/Bid/Scripts"/>
     <link basename="Boards" ref="../Business/Bid/Boards"/>
-    <link basename="Animatic" ref="../WIP/Animatic"/>
+    <link basename="Animatic" ref="../_WIP/Animatic"/>
     <link basename="Methodology" ref="../Business/Bid/Methodology"/>
     <link basename="Treatment" ref="../Business/Bid/Treatments"/>
-    <link basename="Reference" ref="../../master/images/ref"/>
+    <link basename="Reference" ref="../../library/images/ref"/>
   </dir>
 
-  <dir basename="Client_IN" name="Client_In">
+  <dir basename="_Client_IN" name="Client_In">
       <dir basename="YYYY-MM-DD_description" name="YYYY-MM-DD_description"/>
   </dir>
 
-  <dir basename="Client_OUT" name="Client_Out">
+  <dir basename="_Client_OUT" name="Client_Out">
       <dir basename="YYYY-MM-DD_description" name="YYYY-MM-DD_description"/>
   </dir>
 
-  <dir basename="Vendor_IN" name="Client_In">
+  <dir basename="_Vendor_IN" name="Client_In">
       <dir basename="YYYY-MM-DD_description" name="YYYY-MM-DD_description"/>
   </dir>
 
-  <dir basename="Vendor_OUT" name="Client_Out">
+  <dir basename="_Vendor_OUT" name="Client_Out">
       <dir basename="YYYY-MM-DD_description" name="YYYY-MM-DD_description"/>
   </dir>
 
   <dir basename="Shot_Sheets" name="Shot_Sheets"/>
 
-  <dir basename="WIP" name="WIP">
+  <dir basename="_WIP" name="WIP">
       <dir basename="Animatic" name="Animatic">
           <dir basename="Approved" name="Approved"/>
       </dir>

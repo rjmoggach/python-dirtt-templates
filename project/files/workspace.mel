@@ -3,12 +3,12 @@ workspace -fr "mayaAscii"             "scenes";
 workspace -fr "mayaBinary"            "scenes";
 workspace -fr "autoSave"              ".autosave";
 
-workspace -fr "images"                "media/cg";
+workspace -fr "images"                "images/cg";
 
 workspace -fr "sourceImages"          "images/textures";
 workspace -fr "3dPaintTextures"       "images/textures/3dPaintTextures";
 
-workspace -fr "eps"                   "images/design";
+workspace -fr "eps"                   "design";
 workspace -fr "OBJexport"             "data/geo";
 workspace -fr "STEP_DC"               "data/geo";
 workspace -fr "Autodesk Packet File"  "data/geo";
@@ -25,7 +25,7 @@ workspace -fr "studioImport"          "data/geo";
 workspace -fr "STL_DCE"               "data/geo";
 workspace -fr "DWG_DCE"               "data/geo";
 workspace -fr "IGES_DC"               "data/geo";
-workspace -fr "illustrator"           "images/design";
+workspace -fr "illustrator"           "design";
 workspace -fr "diskCache"             "data/cache";
 workspace -fr "fluidCache"            "data/cache/fluid";
 workspace -fr "move"                  "data/chan";
@@ -50,10 +50,7 @@ workspace -fr "mel"                   "tools/maya/mel";
 workspace -fr "python"                "tools/maya/python";
 workspace -fr "templates"             "tools/maya/templates";
 
-workspace -fr "sound"                 "media/audio";
-workspace -fr "audio"                 "media/audio";
-workspace -fr "clips"                 "media/movies";
-workspace -fr "movie"                 "media/movies";
-workspace -fr "offlineEdit"           "media/edits";
+workspace -fr "sound"                 "audio";
+workspace -fr "audio"                 "audio";
 
 

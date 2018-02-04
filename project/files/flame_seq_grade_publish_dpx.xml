@@ -54,7 +54,7 @@ Conformed media is assembled as need be. blah blah.</comment>
         <useTimecode>True</useTimecode>
     </name>
     <createOpenClip>
-        <namePattern>clip/work/{{sequence_name}}/plate/transcode/&lt;shot name&gt;_&lt;track name&gt;_v001.</namePattern>
+        <namePattern>media/clip/work/{{sequence_name}}/plate/transcode/&lt;shot name&gt;_&lt;track name&gt;_v001.</namePattern>
         <version>
             <index>1</index>
             <padding>3</padding>
@@ -62,7 +62,7 @@ Conformed media is assembled as need be. blah blah.</comment>
         </version>
         <batchSetup>
             <namePattern>flame/batch/flame/{{sequence_name}}/&lt;shot name&gt;/&lt;shot name&gt;_grade_&lt;version name&gt;</namePattern>
-            <exportNamePattern>clip/work/{{sequence_name}}/plate/grade/&lt;shot name&gt;_grade.</exportNamePattern>
+            <exportNamePattern>media/clip/work/{{sequence_name}}/plate/grade/&lt;shot name&gt;_grade.</exportNamePattern>
             <outputPathPattern>media/work/{{sequence_name}}/&lt;shot name&gt;/plate/grade/&lt;shot name&gt;_grade_&lt;version name&gt;/&lt;shot name&gt;_grade_&lt;version name&gt;.</outputPathPattern>
             <batchGroup>True</batchGroup>
             <keepClipNodes>True</keepClipNodes>

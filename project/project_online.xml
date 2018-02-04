@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 0.2.0//EN" "http://robmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
-<dirtt name="Online Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}" basename="online" username="pipeline" group="artist" perms="02775">
+<dirtt name="Online Tree" version="0.2.0" dirname="{{project_root}}/{{project_path}}" basename="production/online" username="pipeline" group="artist" perms="02775">
     <dir basename="artwork" username="pipeline" group="artist" perms="02775"/>
     <dir basename="audio" username="pipeline" group="artist" perms="02775"/>
     <dir basename="edl" username="pipeline" group="artist" perms="02775"/>

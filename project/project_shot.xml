@@ -18,131 +18,105 @@
     <dir basename="flame/timewarp/flame/{{sequence_name}}/{{shot_name}}" perms="02775" username="pipeline" group="artist"/>
 
 
-
-  <dir basename="media/work/{{sequence_name}}/{{shot_name}}"  username="pipeline" group="artist" perms="02775">
-    <dir basename="audio" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="cg" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="comp" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="design" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="ref" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="roto" username="pipeline" group="artist" perms="02775"/>
-    <dir basename="plate" username="pipeline" group="artist" perms="02775">
-        <dir basename="transcode" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="grade" username="pipeline" group="artist" perms="02775"/>
-    </dir>
-  </dir>
-
-
-    <!-- A U D I O   F O L D E R -->
-    <link basename="work/{{sequence_name}}/{{shot_name}}/audio" ref="../../../media/work/{{sequence_name}}/{{shot_name}}/audio"/>
-
-    <!-- I M A G E S   F O L D E R -->
-    <dir basename="work/{{sequence_name}}/{{shot_name}}/images" username="pipeline" group="artist" perms="02775">
-      <link basename="master"  ref="../../../../master/images"/>
-      <link basename="cg"      ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/cg"/>
-      <link basename="comp"    ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/comp"/>
-      <link basename="design"  ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/design"/>
-      <link basename="ref"     ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/ref"/>
-      <link basename="roto"    ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/roto"/>
-      <link basename="plate"   ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/roto"/>
-      <dir basename="textures" username="pipeline" group="artist" perms="02775">
-        <dir basename="3dPaintTextures" username="pipeline" group="artist" perms="02775"/>
-      </dir>
-      <dir basename="survey" username="pipeline" group="artist" perms="02775">
-        <dir basename="hdri" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="char" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="env" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="prop" username="pipeline" group="artist" perms="02775"/>
-      </dir>
-    </dir>
-
-    <!-- D A T A   F O L D E R -->
-    <dir basename="work/{{sequence_name}}/{{shot_name}}/data" username="pipeline" group="artist" perms="02775">
-      <dir basename="cache" username="pipeline" group="artist" perms="02775">
-        <dir basename="fluid" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="houdini" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="volumetrics" username="pipeline" group="artist" perms="02775"/>
-      </dir>
-      <dir basename="renderData" username="pipeline" group="artist" perms="02775">
-        <dir basename="depth" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="fur" username="pipeline" group="artist" perms="02775">
-          <dir basename="furFiles" username="pipeline" group="artist" perms="02775"/>
-          <dir basename="furShadowMap" username="pipeline" group="artist" perms="02775"/>
-          <dir basename="furAttrMap" username="pipeline" group="artist" perms="02775"/>
-          <dir basename="furImages" username="pipeline" group="artist" perms="02775"/>
-          <dir basename="furEqualMap" username="pipeline" group="artist" perms="02775"/>
-        </dir>
-        <dir basename="mentalRay" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="iprImages" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="shaders" username="pipeline" group="artist" perms="02775"/>
-      </dir>
-      <dir basename="particles" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="camera" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="chan" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="geo" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="lut" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="mocap" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="moco" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="timewarp" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="volumetrics" username="pipeline" group="artist" perms="02755">
-        <dir basename="particles" username="pipeline" group="artist" perms="02775" />
-        <dir basename="cache" username="pipeline" group="artist" perms="02775" />
-      </dir>
-    </dir>
-
-    <!-- T O O L S   F O L D E R -->
-    <dir basename="work/{{sequence_name}}/{{shot_name}}/tools" username="pipeline" group="artist" perms="02775">
-      <dir basename="maya" username="pipeline" group="artist" perms="02775">
-        <dir basename="mel" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="python" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="shelves" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="modules" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="templates" username="pipeline" group="artist" perms="02775"/>
-      </dir>
-      <dir basename="houdini" username="pipeline" group="artist" perms="02775">
-        <dir basename="dso" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="otls" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="scripts" username="pipeline" group="artist" perms="02775"/>
-      </dir>
-      <dir basename="nuke" username="pipeline" group="artist" perms="02775">
-        <dir basename="gizmos" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="plugins" username="pipeline" group="artist" perms="02775"/>
-        <dir basename="shelves" username="pipeline" group="artist" perms="02775"/>
-      </dir>
-      <dir basename="scripts" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="vray" username="pipeline" group="artist" perms="02775"/>
-    </dir>
-
-  <!-- S C E N E S   F O L D E R -->
-    <dir basename="work/{{sequence_name}}/{{shot_name}}/scenes" username="pipeline" group="artist" perms="02775">
-      <dir basename="track" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="anim" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="fx" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="light" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="comp" username="pipeline" group="artist" perms="02755">
-        <dir basename="nuke" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="media/work/{{sequence_name}}/{{shot_name}}" username="pipeline" group="artist" perms="02775">
+        <dir basename="audio" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="cg" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="comp" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="design" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="ref" username="pipeline" group="artist" perms="02775"/>
         <dir basename="roto" username="pipeline" group="artist" perms="02775"/>
-      </dir>
+        <dir basename="plate" username="pipeline" group="artist" perms="02775">
+                <dir basename="transcode" username="pipeline" group="artist" perms="02775"/>
+                <dir basename="grade" username="pipeline" group="artist" perms="02775"/>
+        </dir>
     </dir>
 
-    <dir basename="work/{{sequence_name}}/{{shot_name}}/.autosave" username="pipeline" group="artist" perms="02777"/>
 
-  <!-- V O L U M E T R I C S   F O L D E R -->
-    <dir name="Shot Volumetrics Folder" basename="work/{{sequence_name}}/{{shot_name}}/volumetrics" username="pipeline" group="artist" perms="02755">
-      <link basename="particles" ref="../data/volumetrics/particles/"/>
-      <link basename="cache" ref="../data/volumetrics/cache/"/>
-      <link basename="render" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/cg"/>
-      <dir basename="options" username="pipeline" group="artist" perms="02775"/>
-      <dir basename="scenes" username="pipeline" group="artist" perms="02775"/>
+    <!-- A U D I O     F O L D E R -->
+    <link basename="shots/{{sequence_name}}/{{shot_name}}/audio" ref="../../../media/work/{{sequence_name}}/{{shot_name}}/audio"/>
+
+
+    <!-- I M A G E S     F O L D E R -->
+    <dir basename="shots/{{sequence_name}}/{{shot_name}}/images" username="pipeline" group="artist" perms="02775">
+        <link basename="library" ref="../../../../library/images"/>
+        <link basename="cg" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/cg"/>
+        <link basename="comp" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/comp"/>
+        <link basename="design" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/design"/>
+        <link basename="roto" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/roto"/>
+        <link basename="plate" ref="../../../../media/work/{{sequence_name}}/{{shot_name}}/roto"/>
+        <dir basename="textures" username="pipeline" group="artist" perms="02775">
+            <dir basename="3dPaintTextures" username="pipeline" group="artist" perms="02775"/>
+        </dir>
+        <dir basename="hdri" username="pipeline" group="artist" perms="02775"/>
     </dir>
 
-    <file basename="work/{{sequence_name}}/{{shot_name}}/workspace.mel" username="pipeline" group="artist" perms="02775" href="/studio/tools/var/dirtt/templates/studio_2015/templates/file_templates/workspace.mel"/>
+    <!-- D A T A     F O L D E R -->
+    <dir basename="shots/{{sequence_name}}/{{shot_name}}/data" username="pipeline" group="artist" perms="02775">
+        <dir basename="cache" username="pipeline" group="artist" perms="02775">
+            <dir basename="fluid" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="houdini" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="particles" username="pipeline" group="artist" perms="02775"/>
+        </dir>
+        <dir basename="renderData" username="pipeline" group="artist" perms="02775">
+            <dir basename="depth" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="fur" username="pipeline" group="artist" perms="02775">
+                <dir basename="furFiles" username="pipeline" group="artist" perms="02775"/>
+                <dir basename="furShadowMap" username="pipeline" group="artist" perms="02775"/>
+                <dir basename="furAttrMap" username="pipeline" group="artist" perms="02775"/>
+                <dir basename="furImages" username="pipeline" group="artist" perms="02775"/>
+                <dir basename="furEqualMap" username="pipeline" group="artist" perms="02775"/>
+            </dir>
+        </dir>
+        <dir basename="camera" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="chan" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="geo" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="lut" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="timewarp" username="pipeline" group="artist" perms="02775"/>
+    </dir>
 
-    <!-- P A I N T   F O L D E R -->
-    <dir basename="work/{{sequence_name}}/{{shot_name}}/dmp" username="pipeline" group="artist" perms="02775"/>
+    <!-- T O O L S     F O L D E R -->
+    <dir basename="shots/{{sequence_name}}/{{shot_name}}/tools" username="pipeline" group="artist" perms="02775">
+        <dir basename="maya" username="pipeline" group="artist" perms="02775">
+            <dir basename="mel" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="python" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="shelves" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="modules" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="templates" username="pipeline" group="artist" perms="02775"/>
+        </dir>
+        <dir basename="houdini" username="pipeline" group="artist" perms="02775">
+            <dir basename="dso" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="otls" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="scripts" username="pipeline" group="artist" perms="02775"/>
+        </dir>
+        <dir basename="nuke" username="pipeline" group="artist" perms="02775">
+            <dir basename="gizmos" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="plugins" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="shelves" username="pipeline" group="artist" perms="02775"/>
+        </dir>
+        <dir basename="scripts" username="pipeline" group="artist" perms="02775"/>
+    </dir>
 
-    <!-- D E S I G N   F O L D E R -->
-    <dir basename="work/{{sequence_name}}/{{shot_name}}/design" username="pipeline" group="artist" perms="02775"/>
+<!-- S C E N E S     F O L D E R -->
+    <dir basename="shots/{{sequence_name}}/{{shot_name}}/scenes" username="pipeline" group="artist" perms="02775">
+        <dir basename="track" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="anim" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="fx" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="light" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="comp" username="pipeline" group="artist" perms="02755">
+            <dir basename="nuke" username="pipeline" group="artist" perms="02775"/>
+            <dir basename="roto" username="pipeline" group="artist" perms="02775"/>
+        </dir>
+    </dir>
+
+    <dir basename="shots/{{sequence_name}}/{{shot_name}}/.autosave" username="pipeline" group="artist" perms="02777"/>
+
+    <file basename="shots/{{sequence_name}}/{{shot_name}}/workspace.mel" username="pipeline" group="artist" perms="02775" href="/studio/tools/var/dirtt/templates/project/files/workspace.mel"/>
+
+    <!-- P A I N T     F O L D E R -->
+    <dir basename="shots/{{sequence_name}}/{{shot_name}}/dmp" username="pipeline" group="artist" perms="02775"/>
+
+    <!-- D E S I G N     F O L D E R -->
+    <dir basename="shots/{{sequence_name}}/{{shot_name}}/design" username="pipeline" group="artist" perms="02775"/>
 
 
 

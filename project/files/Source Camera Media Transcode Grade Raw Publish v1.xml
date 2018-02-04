@@ -1,2 +1,71 @@
 <?xml version="1.0"?>
-<preset version="6"><type>sequence</type><comment>&quot;Source Sequence&quot; publish to 12 bit DPX Sequence in project folders with gateway clip creation. This is used for source grading, reconform, media consolidation etc. This is commonly used for transcoding &amp; publishing original camera media from a client drive.</comment><sequence><fileType>NONE</fileType><namePattern></namePattern><includeVideo>True</includeVideo><exportVideo>True</exportVideo><videoMedia><mediaFileType>image</mediaFileType><commit>Original</commit><flatten>NoChange</flatten><exportHandles>True</exportHandles><nbHandles>15</nbHandles></videoMedia><includeAudio>True</includeAudio><exportAudio>False</exportAudio><audioMedia><mediaFileType>audio</mediaFileType><commit>Original</commit><flatten>NoChange</flatten><exportHandles>True</exportHandles><nbHandles>10</nbHandles></audioMedia></sequence><video><fileType>Dpx</fileType><codec>923680</codec><codecProfile></codecProfile><namePattern>media/source/transcode/&lt;tape&gt;/&lt;segment name&gt;/&lt;width&gt;x&lt;height&gt;/&lt;extension&gt;/&lt;segment name&gt;.</namePattern><compressionQuality>50</compressionQuality><transferCharacteristic>4</transferCharacteristic><colorimetricSpecification>4</colorimetricSpecification><publishLinked>False</publishLinked><overwriteWithVersions>False</overwriteWithVersions><resize><resizeType>fit</resizeType><resizeFilter>lanczos</resizeFilter><width>0</width><height>0</height><bitsPerChannel>12</bitsPerChannel><numChannels>3</numChannels><floatingPoint>False</floatingPoint><bigEndian>False</bigEndian><pixelRatio>1</pixelRatio><scanFormat>P</scanFormat></resize></video><name><framePadding>8</framePadding><startFrame>0</startFrame><useTimecode>True</useTimecode></name><createOpenClip><namePattern>clip/source/transcode/&lt;tape&gt;/&lt;segment name&gt;</namePattern><version><index>1</index><padding>3</padding><name>v&lt;version&gt;</name></version><batchSetup><namePattern>flame/batch/flame/grade/source/&lt;shot name&gt;/&lt;shot name&gt;_raw_&lt;version name&gt;</namePattern><exportNamePattern>clip/source/grade/raw/&lt;shot name&gt;_raw</exportNamePattern><outputPathPattern>media/source/grade/raw/&lt;tape&gt;/&lt;segment name&gt;_raw_&lt;version name&gt;/&lt;width&gt;x&lt;height&gt;/&lt;extension&gt;/&lt;segment name&gt;_raw_&lt;version name&gt;</outputPathPattern><batchGroup>False</batchGroup><keepClipNodes>False</keepClipNodes><batchGroupPath>/Desktop</batchGroupPath></batchSetup></createOpenClip></preset>
+<preset version="6">
+    <type>sequence</type>
+    <comment>&quot;Source Sequence&quot; publish to 12 bit DPX Sequence in project folders with gateway clip creation. This is used for source grading, reconform, media consolidation etc. This is commonly used for transcoding &amp; publishing original camera media from a client drive.</comment>
+    <sequence>
+        <fileType>NONE</fileType>
+        <namePattern></namePattern>
+        <includeVideo>True</includeVideo>
+        <exportVideo>True</exportVideo>
+        <videoMedia>
+            <mediaFileType>image</mediaFileType>
+            <commit>Original</commit>
+            <flatten>NoChange</flatten>
+            <exportHandles>True</exportHandles>
+            <nbHandles>15</nbHandles>
+        </videoMedia>
+        <includeAudio>True</includeAudio>
+        <exportAudio>False</exportAudio>
+        <audioMedia>
+            <mediaFileType>audio</mediaFileType>
+            <commit>Original</commit>
+            <flatten>NoChange</flatten>
+            <exportHandles>True</exportHandles>
+            <nbHandles>10</nbHandles>
+        </audioMedia>
+    </sequence>
+    <video>
+        <fileType>Dpx</fileType>
+        <codec>923680</codec>
+        <codecProfile></codecProfile>
+        <namePattern>media/source/transcode/&lt;tape&gt;/&lt;segment name&gt;/&lt;width&gt;x&lt;height&gt;/&lt;extension&gt;/&lt;segment name&gt;.</namePattern>
+        <compressionQuality>50</compressionQuality>
+        <transferCharacteristic>4</transferCharacteristic>
+        <colorimetricSpecification>4</colorimetricSpecification>
+        <publishLinked>False</publishLinked>
+        <overwriteWithVersions>False</overwriteWithVersions>
+        <resize>
+            <resizeType>fit</resizeType>
+            <resizeFilter>lanczos</resizeFilter>
+            <width>0</width>
+            <height>0</height>
+            <bitsPerChannel>12</bitsPerChannel>
+            <numChannels>3</numChannels>
+            <floatingPoint>False</floatingPoint>
+            <bigEndian>False</bigEndian>
+            <pixelRatio>1</pixelRatio>
+            <scanFormat>P</scanFormat>
+        </resize>
+    </video>
+    <name>
+        <framePadding>8</framePadding>
+        <startFrame>0</startFrame>
+        <useTimecode>True</useTimecode>
+    </name>
+    <createOpenClip>
+        <namePattern>media/clip/source/transcode/&lt;tape&gt;/&lt;segment name&gt;</namePattern>
+        <version>
+            <index>1</index>
+            <padding>3</padding>
+            <name>v&lt;version&gt;</name>
+        </version>
+        <batchSetup>
+            <namePattern>flame/batch/flame/grade/source/&lt;shot name&gt;/&lt;shot name&gt;_raw_&lt;version name&gt;</namePattern>
+            <exportNamePattern>media/clip/source/grade/raw/&lt;shot name&gt;_raw</exportNamePattern>
+            <outputPathPattern>media/source/grade/raw/&lt;tape&gt;/&lt;segment name&gt;_raw_&lt;version name&gt;/&lt;width&gt;x&lt;height&gt;/&lt;extension&gt;/&lt;segment name&gt;_raw_&lt;version name&gt;</outputPathPattern>
+            <batchGroup>False</batchGroup>
+            <keepClipNodes>False</keepClipNodes>
+            <batchGroupPath>/Desktop</batchGroupPath>
+        </batchSetup>
+    </createOpenClip>
+</preset>

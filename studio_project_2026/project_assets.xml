@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dirtt name="Assets Tree 2026" version="1.0" dirname="{{project_root}}/{{project_path}}" basename="assets" username="pipeline" group="pipeline" perms="02775">
+
+    <dir basename="reference" id="assets-reference" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="hdri" id="assets-hdri" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="textures" id="assets-textures" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="grain" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="audio" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="fonts" username="pipeline" group="artist" perms="02775"/>
+    <dir basename="lut" username="pipeline" group="pipeline" perms="02775"/>
+
+<!-- CG asset kinds : was library/assets in 2015 -->
+    <dir basename="models" id="assets-models" username="pipeline" group="pipeline" perms="02755">
+        <dir basename="cam" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="char" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="env" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="prop" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="fx" username="pipeline" group="pipeline" perms="02755"/>
+    </dir>
+
+<!-- shoot day materials : was library/shoot in 2015 -->
+    <dir basename="shoot" id="assets-shoot" username="pipeline" group="artist" perms="02775">
+        <dir basename="survey" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="hdri" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="texture" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="scans" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="data" username="pipeline" group="artist" perms="02775"/>
+        <dir basename="notes" username="pipeline" group="artist" perms="02775"/>
+    </dir>
+
+</dirtt>

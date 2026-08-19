@@ -110,7 +110,7 @@
 
     <dir basename="shots/{{sequence_name}}/{{shot_name}}/.autosave" username="pipeline" group="artist" perms="02777"/>
 
-    <file basename="shots/{{sequence_name}}/{{shot_name}}/workspace.mel" username="pipeline" group="artist" perms="02775" href="/studio/tools/var/dirtt/templates/project/files/workspace.mel"/>
+    <file basename="shots/{{sequence_name}}/{{shot_name}}/workspace.mel" username="pipeline" group="artist" perms="02775" href="files/workspace.mel"/>
 
     <!-- P A I N T     F O L D E R -->
     <dir basename="shots/{{sequence_name}}/{{shot_name}}/dmp" username="pipeline" group="artist" perms="02775"/>

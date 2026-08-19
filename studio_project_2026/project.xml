@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
 <dirtt name="Studio Project Tree 2026" version="1.0" dirname="{{project_root}}" basename="{{project_path}}" id="project-root" username="pipeline" group="artist" perms="02755" xmlns:xi="http://www.w3.org/2001/XInclude">
 
 <!-- C O N F I G  : ocio + pipeline config live with the project -->

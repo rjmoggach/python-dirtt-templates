@@ -5,7 +5,7 @@ studio_project@2026.01 - project scaffold, cut from D26002-EXAMPLE v11 (the bles
 Run once per project, as root on the NAS.
 vars: project_root, project_dir, project_code, project_name, project_label, created_by
   project_dir = job-number form: D26002-PROJECT_NAME
-Spec: see README.md and index.json in this repo. The scaffold wrapper also copies this template set
+Spec: docs/template-spec.md (Studio-Pipeline) / README.md + index.json (python-dirtt-templates). The scaffold wrapper also copies this template set
 into lib/dirtt/ (raw copy - dirtt substitutes placeholders in href content, so the
 wrapper copies, not dirtt).
 -->

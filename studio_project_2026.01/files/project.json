@@ -9,12 +9,7 @@
   "template": "studio_project@2026.01",
   "created": null,
   "created_by": "{{created_by}}",
-  "roots": {
-    "work": {"darwin": null, "linux": null, "windows": null},
-    "cache": {"darwin": null, "linux": null, "windows": null},
-    "cloud": {"darwin": null, "linux": null, "windows": null},
-    "deliver": {"darwin": null, "linux": null, "windows": null}
-  },
+  "roots": {},
   "attrib": {
     "fps": 23.976, "resolution_w": 3840, "resolution_h": 2160,
     "pixel_aspect": 1.0, "frame_start": 1001,

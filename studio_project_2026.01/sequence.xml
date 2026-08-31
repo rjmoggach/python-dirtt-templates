@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!-- one sequence (run once per sequence).
+     vars: project_root, project_dir, sequence_id   e.g. bsr010
+     Sequence-level artifacts proven by real production (My Education): context + ref.
+     Shots inside are created by shot.xml, lazily - never up front. -->
+<dirtt basename="shots/{{sequence_id}}" name="sequence" version="2026.01"
+       dirname="{{project_root}}/{{project_dir}}" id="sequence-root"
+       username="pipeline" group="artist" perms="02775">
+  <dir basename="context" id="sequence-context"/>
+  <dir basename="ref" id="sequence-ref"/>
+</dirtt>

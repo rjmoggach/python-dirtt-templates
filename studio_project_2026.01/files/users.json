@@ -1,0 +1,7 @@
+{
+  "users_schema": 1,
+  "actors": [
+    {"id": "{{created_by}}", "kind": "human", "initials": null, "name": null, "role": null},
+    {"id": "pipeline", "kind": "system", "name": "Pipeline"}
+  ]
+}

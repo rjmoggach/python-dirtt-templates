@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
 <!--
-studio_project@2026.01 - project scaffold, cut from D26002-EXAMPLE v11 (the blessed tree).
+studio_project@2026.01 - project scaffold, cut from D26002_EXAMPLE v11 (the blessed tree).
 Run once per project, as root on the NAS.
 vars: project_root, project_dir, project_code, project_name, project_label, created_by
-  project_dir = job-number form: D26002-PROJECT_NAME
+  project_dir = job-number form: D26002_PROJECT_NAME
 Spec: docs/template-spec.md (Studio-Pipeline) / README.md + index.json (python-dirtt-templates). The scaffold wrapper also copies this template set
 into lib/dirtt/ (raw copy - dirtt substitutes placeholders in href content, so the
 wrapper copies, not dirtt).
@@ -114,7 +114,7 @@ wrapper copies, not dirtt).
     </dir>
     <dir basename="user" id="work-user"/>
     <dir basename="writing" id="work-writing">
-      <dir basename="bible"/><dir basename="builds"/><dir basename="fragments"/>
+      <dir basename="bible"/><dir basename="builds"/><dir basename="scenes"/>
       <dir basename="notes"><dir basename="cut"/></dir>
       <dir basename="reports"/>
     </dir>

@@ -1,0 +1,62 @@
+{
+  "migration_schema": 2,
+  "from": "filmcraft_project@2026.07",
+  "to": "studio_project@2026.01",
+  "updated": "2026-08-30",
+  "mode": "copy or move - decided by how dirtt migrate is called, not by this file",
+  "principle": "filmcraft is not a foreign system to be cohabited with - it is another template taxonomy. So this is a template-to-template translation, and genai/ DISSOLVES into the studio tree rather than sitting beside it. That is what makes the reconciler work: it finds assets at assets/{type}/{name} because that is where they now are, not because it was taught a second layout.",
+  "method": {
+    "law": "This file describes the taxonomy translation only. Whether the bytes are copied or moved is decided by how dirtt migrate is CALLED, not by anything in here. The same map drives both.",
+    "for_this_migration": "Call it with --copy --dest, so the source project stays live and a wrong map costs a directory rather than a production. Blocked until dirtt ships --copy: see docs/dirtt-migrate-copy-spec.md.",
+    "cross_filesystem": "The source and target are on different filesystems, so a move would raise EXDEV regardless. Copy is required, not merely preferred.",
+    "orphans": "Anything unmapped is reported and left in the source. Nothing is deleted from either side, ever."
+  },
+  "map": {
+    "genai/assets/char": "assets/char",
+    "genai/assets/set": "assets/set",
+    "genai/context": "context",
+    "genai/renders": "work/genai",
+    "genai/_work": "work/genai",
+    "genai/sequences": "shots",
+    "script/scenes": "work/writing/scenes",
+    "script/build": "work/writing/builds",
+    "script/bible": "work/writing/bible",
+    "script/notes": "work/writing/notes",
+    "script/reports": "work/writing/reports",
+    "ref": "ref",
+    "logs": "logs",
+    ".claude": ".claude",
+    ".canvas": ".canvas",
+    ".impeccable": ".impeccable",
+    "_to_delete": "_to_delete",
+    "CLAUDE.md": "CLAUDE.md"
+  },
+  "file_map": {
+    "genai/{code}_production.json": "lib/cfg/{code}_production.json",
+    "genai/{code}_audit.json": "logs/{code}_audit.json",
+    "genai/{code}_production.json.bak": "logs/{code}_production.json.bak"
+  },
+  "exclude": {
+    "dashboard": "606 MB Next.js app. Project-local tool CODE belongs in a repo, not inside a project (learnings #11). Not carried."
+  },
+  "notes": {
+    "manifest_home": "With genai/ dissolved there is no genai/ root to hold the manifest, so it moves to lib/cfg/{code}_production.json - the fallback the reconciler already implements and documents. tracking.md sec 4's 'kept at genai/ for plugin compatibility' describes a tree that no longer exists after this migration.",
+    "recipes_are_history": "1176 .recipe sidecars record paths under genai/. They are NOT rewritten. filmcraft's own taxonomy-v2 spec settles this: recipes are history, and reconcile resolves moved media by stem. Rewriting them would falsify the provenance record.",
+    "asset_types": "Scaffold the FULL asset type list (char, prop, set, vehicle, fx, look) even though this production only ever used char and set. An empty type directory costs nothing and removes a decision at the moment someone needs it; the laziness that matters is at the asset and shot level, not the type level.",
+    "shots_are_lazy": "14 sequences, zero shot directories. After migration shots/{seq}/ exists with sequence-level docs and no shot interiors. That is correct and is the evidence lazy scaffolding was built on.",
+    "filmcraft_reconfiguration": "After migrating, filmcraft must be pointed at the new roots or it will keep writing to genai/ and script/ and the trees will diverge. That reconfiguration is part of applying this migration, not a follow-up.",
+    "merge_destination": "genai/renders and genai/_work both map onto work/genai. That is a MERGE: the migration expands it into per-child copies so neither parent lands on top of the other. Verified against the real tree - 2 children and 29 children, no shared names."
+  },
+  "why_each_mapping": {
+    "genai/assets/char": "The asset interior does not change: same facet dirs, same work/ boundary, same filenames. Only the parent moves. 33 assets.",
+    "genai/assets/set": "As above. 13 sets: coverage, cutaway, master, ortho, states, work.",
+    "genai/context": "learnings #10: context/ is alive and heavy - art bible, look arc, lookdev brief, open decisions, dated prompt plans. The studio tree's top-level context/ was designed to inherit exactly this.",
+    "genai/renders": "Both renders/ and _work/ are general agentic working space - two similar folders that grew for the same purpose - so both land in work/genai. They merge: renders/ contributes waking_tableaux, _work/ contributes its 29 entries, and the two share no child names.",
+    "genai/_work": "The round-batch probe shape (batch_{subject}_r{N}, 80+ batches) plus staging scripts, archives and audit dumps. General agentic work, same as renders/. Non-content on both sides.",
+    "genai/sequences": "Sequences become the shots spine. {seq}_context.md and {seq}_shotlist.md land in shots/{seq}/context/, where the studio sequence template puts sequence-level docs; ref/ rides along.",
+    "script/scenes": "The writing room keeps the word writers already use. scenes/ stays scenes/ - the earlier fragments/ rename was a rename for its own sake and has been dropped from the studio template.",
+    "script/build": "builds = build.",
+    "ref": "Same path, same shape. The dated-drop grammar has drifted (surname instead of initials, drops with no time). That lints, never blocks, and rewriting history is not this migration's job.",
+    "_to_delete": "The retirement bin travels; scanners skip it and humans empty it."
+  }
+}

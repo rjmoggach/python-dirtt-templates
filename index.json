@@ -2,17 +2,27 @@
   "index_schema": 1,
   "updated": "2026-08-30",
   "description": "Registry of the studio template sets in this repo. Tooling reads this file to discover what it can scaffold, which template set is current, and what each one costs in actions. A studio has MANY job roots and MANY template sets; neither is hardcoded anywhere.",
-
   "job_roots": {
     "law": "A job root is the parent directory that job directories live under. A studio may have several (current work, archive, fast scratch, a second facility, a client-segregated volume). The template variable 'project_root' names ONE of them at scaffold time. Job roots are site-local, so their real paths are NOT stored here and NOT stored in any project: they are declared once in the studio's own config and resolved per platform at use time. Nothing ever stores an absolute path.",
     "selection": "Pass --var project_root=<resolved job root> at scaffold time. The scaffolded project records WHICH named job root it was created under (lib/cfg/project.json -> job_root), never the absolute path, so a tree stays relocatable and portable across macOS/Linux/Windows.",
     "example": {
-      "main":    {"darwin": "/Volumes/jobs",         "linux": "/mnt/jobs",         "windows": "J:/jobs"},
-      "archive": {"darwin": "/Volumes/jobs_archive", "linux": "/mnt/jobs_archive", "windows": "K:/jobs"},
-      "fast":    {"darwin": "/Volumes/fast",         "linux": "/mnt/fast",         "windows": "F:/fast"}
+      "main": {
+        "darwin": "/Volumes/jobs",
+        "linux": "/mnt/jobs",
+        "windows": "J:/jobs"
+      },
+      "archive": {
+        "darwin": "/Volumes/jobs_archive",
+        "linux": "/mnt/jobs_archive",
+        "windows": "K:/jobs"
+      },
+      "fast": {
+        "darwin": "/Volumes/fast",
+        "linux": "/mnt/fast",
+        "windows": "F:/fast"
+      }
     }
   },
-
   "template_sets": [
     {
       "ref": "studio_project@2026.01",
@@ -22,29 +32,149 @@
       "status": "current",
       "description": "Hybrid AI / live action / design / animation / VFX studio project. Eight top-level nouns (assets, context, lib, media, ref, shots, work + logs/.claude). The shot is a Maya-style project dir. Lazy by design: sequences, shots, assets and user sandboxes are scaffolded per entity, on first use, never up front.",
       "entities": {
-        "project":  {"template": "project.xml",  "actions": 106, "run": "once per project"},
-        "sequence": {"template": "sequence.xml", "actions": 3,   "run": "once per sequence"},
-        "shot":     {"template": "shot.xml",     "actions": 52,  "run": "once per shot"},
-        "asset":    {"template": "asset.xml",    "actions": 3,   "run": "once per asset"},
-        "user":     {"template": "user.xml",     "actions": 2,   "run": "once per artist"}
+        "project": {
+          "template": "project.xml",
+          "actions": 106,
+          "run": "once per project"
+        },
+        "sequence": {
+          "template": "sequence.xml",
+          "actions": 3,
+          "run": "once per sequence"
+        },
+        "shot": {
+          "template": "shot.xml",
+          "actions": 52,
+          "run": "once per shot"
+        },
+        "asset": {
+          "template": "asset.xml",
+          "actions": 3,
+          "run": "once per asset"
+        },
+        "user": {
+          "template": "user.xml",
+          "actions": 2,
+          "run": "once per artist"
+        }
       },
       "vars": {
-        "project":  ["project_root", "project_dir", "job_number", "project_code", "project_name", "project_label", "created_by"],
-        "sequence": ["project_root", "project_dir", "sequence_id"],
-        "shot":     ["project_root", "project_dir", "sequence_id", "shot"],
-        "asset":    ["project_root", "project_dir", "asset_type", "asset_name"],
-        "user":     ["project_root", "project_dir", "user"],
+        "project": [
+          "project_root",
+          "project_dir",
+          "job_number",
+          "project_code",
+          "project_name",
+          "project_label",
+          "created_by"
+        ],
+        "sequence": [
+          "project_root",
+          "project_dir",
+          "sequence_id"
+        ],
+        "shot": [
+          "project_root",
+          "project_dir",
+          "sequence_id",
+          "shot"
+        ],
+        "asset": [
+          "project_root",
+          "project_dir",
+          "asset_type",
+          "asset_name"
+        ],
+        "user": [
+          "project_root",
+          "project_dir",
+          "user"
+        ],
         "note": "`dirtt placeholders` under-reports project.xml: it does not traverse into href'd seed files, so job_number/project_code/project_name/project_label/created_by (consumed by files/project.json and files/users.json) do not appear in its output. This list is the truth."
       },
-      "seed_files": ["files/project.json", "files/users.json", "files/workspace.mel", "files/dirtt_readme.md", "files/ocio_luts_readme.md", "files/color_luts_readme.md"],
-      "asset_types": ["char", "prop", "set", "vehicle", "fx", "look"],
-      "verified": {"dirtt": "1.0.3", "date": "2026-08-30", "dtd_valid": true},
+      "seed_files": [
+        "files/project.json",
+        "files/users.json",
+        "files/workspace.mel",
+        "files/dirtt_readme.md",
+        "files/ocio_luts_readme.md",
+        "files/color_luts_readme.md"
+      ],
+      "asset_types": [
+        "char",
+        "prop",
+        "set",
+        "vehicle",
+        "fx",
+        "look"
+      ],
+      "verified": {
+        "dirtt": "1.0.3",
+        "date": "2026-08-30",
+        "dtd_valid": true
+      },
       "notes": [
         "dirtt substitutes {{vars}} inside href'd file CONTENT. A scaffold wrapper that pins this template set into the project's lib/dirtt/ must RAW-copy it, never route it through dirtt href, or the pinned copy loses its placeholders.",
         "A literal '}}' anywhere in a template, XML comments included, is a dirtt TemplateError.",
         "Re-running a template over an existing tree: directories skip, but <file> nodes refuse to overwrite. Wrappers need a skip-existing-files pass for idempotence.",
         "chown applies only when run as root; chmod always. A non-root scaffold has correct modes and wrong owners."
       ]
+    },
+    {
+      "ref": "filmcraft_project@2026.07",
+      "id": "filmcraft_project",
+      "version": "2026.07",
+      "path": "filmcraft_project_2026.07",
+      "status": "current",
+      "description": "The filmcraft generative-development taxonomy: genai/{assets,context,renders,sequences,_work} plus a script/ writing tree. Development-stage work lives at sequence level; the reference production ran 14 sequences and never created a shot directory. Captured as a template so a project built this way can be migrated by map rather than by hand.",
+      "entities": {
+        "project": {
+          "template": "project.xml",
+          "actions": 22,
+          "run": "once per project"
+        },
+        "asset": {
+          "template": "asset.xml",
+          "actions": 6,
+          "run": "once per asset"
+        },
+        "sequence": {
+          "template": "sequence.xml",
+          "actions": 2,
+          "run": "once per sequence"
+        }
+      },
+      "vars": {
+        "project": [
+          "project_root",
+          "project_dir",
+          "project_code"
+        ],
+        "asset": [
+          "project_root",
+          "project_dir",
+          "asset_type",
+          "asset_name"
+        ],
+        "sequence": [
+          "project_root",
+          "project_dir",
+          "sequence_id"
+        ]
+      },
+      "asset_types": [
+        "char",
+        "prop",
+        "set",
+        "vehicle",
+        "fx",
+        "look"
+      ],
+      "verified": {
+        "dirtt": "1.1.0",
+        "date": "2026-08-30",
+        "dtd_valid": true
+      }
     },
     {
       "ref": "studio_project@2015",
@@ -54,21 +184,54 @@
       "status": "historical",
       "description": "A VFX/post project structure as deployed at a studio circa 2015 (library/media/production/work/shots/flame). Kept as a working historical snapshot; updated only enough to run with dirtt 1.0 (relative href paths). This is the layout the 2015->2026.01 migration reads from.",
       "entities": {
-        "project":  {"template": "project.xml",          "run": "once per project"},
-        "sequence": {"template": "project_sequence.xml", "run": "once per sequence"},
-        "shot":     {"template": "project_shot.xml",     "run": "once per shot"},
-        "clip":     {"template": "project_clip.xml",     "run": "once per clip"}
+        "project": {
+          "template": "project.xml",
+          "run": "once per project"
+        },
+        "sequence": {
+          "template": "project_sequence.xml",
+          "run": "once per sequence"
+        },
+        "shot": {
+          "template": "project_shot.xml",
+          "run": "once per shot"
+        },
+        "clip": {
+          "template": "project_clip.xml",
+          "run": "once per clip"
+        }
       },
       "vars": {
-        "project":  ["project_root", "project_path"],
-        "sequence": ["project_root", "project_path", "sequence_name"],
-        "shot":     ["project_root", "project_path", "shot_name"],
-        "clip":     ["project_root", "project_path", "clip_name"]
+        "project": [
+          "project_root",
+          "project_path"
+        ],
+        "sequence": [
+          "project_root",
+          "project_path",
+          "sequence_name"
+        ],
+        "shot": [
+          "project_root",
+          "project_path",
+          "shot_name"
+        ],
+        "clip": [
+          "project_root",
+          "project_path",
+          "clip_name"
+        ]
       }
     }
   ],
-
   "migrations": [
+    {
+      "file": "migrations/filmcraft_2026.07_to_studio_2026.01.json",
+      "from": "filmcraft_project@2026.07",
+      "to": "studio_project@2026.01",
+      "status": "current",
+      "note": "genai/ dissolves into the studio taxonomy rather than sitting beside it. Needs dirtt migrate --copy."
+    },
     {
       "file": "migrations/2015_to_2026.01.json",
       "from": "studio_project@2015",

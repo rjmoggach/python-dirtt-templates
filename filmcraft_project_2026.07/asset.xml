@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!-- one filmcraft asset (run on first use).
+     vars: project_root, project_dir, asset_type, asset_name
+     asset_type: char | set  (the only two the reference production ever used)
+     The law (asset-taxonomy-v2): outside work/ is locked product; inside work/ is
+     provisional. Locked facet dirs (id, turnaround, wardrobe, makeup, expressions,
+     master, coverage, states, ortho, cutaway, ...) appear on first use, never up front. -->
+<dirtt basename="genai/assets/{{asset_type}}/{{asset_name}}" name="filmcraft_asset" version="2026.07"
+       dirname="{{project_root}}/{{project_dir}}" id="fc-asset-root"
+       username="pipeline" group="artist" perms="02775">
+  <dir basename="work" id="fc-asset-work">
+    <dir basename="options"><dir basename="rejected"/></dir>
+    <dir basename="sheets"/>
+    <dir basename="scratch"/>
+  </dir>
+</dirtt>

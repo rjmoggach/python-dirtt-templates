@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!--
+filmcraft_project@2026.07 - the filmcraft generative-development taxonomy, captured as a
+template so a project built this way can be migrated to another taxonomy by map rather
+than by hand.
+
+Cut from the real 'My Education' tree (code edu): 3.7 GB, 1176 recipes, 1148 generations,
+33 char + 13 set assets, 14 sequences, zero shot directories. Facet shape follows
+filmcraft's asset-taxonomy-v2 (2026-07-16, approved).
+
+vars: project_root, project_dir, project_code
+Entities are LAZY: assets and sequences are created on first use by asset.xml and
+sequence.xml, never up front. Facets appear as work demands them - the facet catalog is a
+guidebook, not a rulebook.
+-->
+<dirtt basename="{{project_dir}}" name="filmcraft_project" version="2026.07"
+       dirname="{{project_root}}" id="filmcraft-root"
+       username="pipeline" group="artist" perms="02775">
+
+  <dir basename=".claude" id="fc-claude"/>
+  <dir basename="logs" id="fc-logs"/>
+  <dir basename="ref" id="fc-ref" perms="02777"/>
+
+  <dir basename="genai" id="fc-genai">
+    <dir basename="assets" id="fc-assets">
+      <dir basename="char" id="fc-assets-char"/>
+      <dir basename="prop" id="fc-assets-prop"/>
+      <dir basename="set" id="fc-assets-set"/>
+      <dir basename="vehicle" id="fc-assets-vehicle"/>
+      <dir basename="fx" id="fc-assets-fx"/>
+      <dir basename="look" id="fc-assets-look"/>
+    </dir>
+    <dir basename="context" id="fc-context"/>
+    <dir basename="renders" id="fc-renders"/>
+    <dir basename="sequences" id="fc-sequences"/>
+    <dir basename="_work" id="fc-probes"/>
+  </dir>
+
+  <dir basename="script" id="fc-script">
+    <dir basename="bible" id="fc-script-bible"/>
+    <dir basename="build" id="fc-script-build"/>
+    <dir basename="notes" id="fc-script-notes"/>
+    <dir basename="reports" id="fc-script-reports"/>
+    <dir basename="scenes" id="fc-script-scenes"/>
+  </dir>
+
+</dirtt>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!-- one filmcraft sequence (run once per sequence).
+     vars: project_root, project_dir, sequence_id   e.g. edu010
+     Sequence-level is where a development project actually lives: context + shotlist + ref.
+     The reference production ran 14 sequences and never created a single shot directory. -->
+<dirtt basename="genai/sequences/{{sequence_id}}" name="filmcraft_sequence" version="2026.07"
+       dirname="{{project_root}}/{{project_dir}}" id="fc-sequence-root"
+       username="pipeline" group="artist" perms="02775">
+  <dir basename="ref" id="fc-sequence-ref"/>
+</dirtt>

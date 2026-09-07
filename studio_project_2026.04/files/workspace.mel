@@ -1,0 +1,12 @@
+//Maya workspace: shot-level project. Root = the shot directory.
+workspace -fr "scene"           "maya";
+workspace -fr "images"          "images/cg/render";
+workspace -fr "sourceImages"    "images/cg/textures";
+workspace -fr "3dPaintTextures" "images/cg/textures/3dPaintTextures";
+workspace -fr "renderData"      "data/cache/renderData";
+workspace -fr "fileCache"       "data/cache/nCache";
+workspace -fr "alembicCache"    "data/cache/abc";
+workspace -fr "diskCache"       "data/cache";
+workspace -fr "movie"           "videos";
+workspace -fr "audio"           "audio";
+workspace -fr "clips"           "data/chan";

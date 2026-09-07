@@ -1,0 +1,6 @@
+{
+  "facet": "{{facet}}",
+  "label": "{{facet_label}}",
+  "created": "{{created}}",
+  "created_by": "{{created_by}}"
+}

@@ -1,0 +1,17 @@
+{
+  "migration_schema": 1,
+  "from": "studio_project@2026.01",
+  "to": "studio_project@2026.04",
+  "updated": "2026-09-07",
+  "rules": "Explicit mapping wins; then prefix rules; an identical path matches itself; new-only paths get created; old-only paths are ORPHANS - kept and reported, never deleted. Always dry-run first.",
+  "principle": "2026.01 -> 2026.04 moves nothing. 2026.02 made the facet level OPTIONAL (shots/{seq}/{facet}/{shot}); whether a sequence gets facets is a production decision, so this map never invents one. 2026.03 stopped scaffolding ref/ under sequences and facets: an existing one stays where it is as the sequence's own dir. 2026.04 added c4d/ and lib/dcc/c4d/ to every shot: created on migrate, or by re-running shot.xml with skip-existing-files.",
+  "mapping": {},
+  "prefix_rules": [],
+  "created_in_new": [
+    "shots/{seq}[/{facet}]/{shot}/c4d",
+    "shots/{seq}[/{facet}]/{shot}/lib/dcc/c4d"
+  ],
+  "orphans_expected": [
+    "shots/{seq}/ref (2026.01 scaffolded it; 2026.03+ does not; kept)"
+  ]
+}

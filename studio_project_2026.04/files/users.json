@@ -1,0 +1,7 @@
+{
+  "users_schema": 1,
+  "actors": [
+    {"id": "{{created_by}}", "kind": "human", "initials": "rm", "name": "Robert Moggach", "role": null, "os_users": ["rob"]},
+    {"id": "pipeline", "kind": "system", "name": "Pipeline"}
+  ]
+}

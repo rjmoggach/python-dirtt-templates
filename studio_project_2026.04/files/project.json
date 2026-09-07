@@ -1,0 +1,20 @@
+{
+  "passport_schema": 1,
+  "job_number": "{{job_number}}",
+  "job_root": null,
+  "code": "{{project_code}}",
+  "name": "{{project_name}}",
+  "label": "{{project_label}}",
+  "project_id": null,
+  "template": "studio_project@2026.02",
+  "created": null,
+  "created_by": "{{created_by}}",
+  "roots": {},
+  "attrib": {
+    "fps": 23.976, "resolution_w": 3840, "resolution_h": 2160,
+    "pixel_aspect": 1.0, "frame_start": 1001,
+    "colorspace": "ACEScg",
+    "ocio": "studio"
+  },
+  "delivery": {"grammar": "netflix", "showid": null, "vendor_code": "DSH"}
+}

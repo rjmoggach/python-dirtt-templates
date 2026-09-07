@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!-- one sequence (run once per sequence).
+     vars: project_root, project_dir, sequence_id   e.g. bsr010
+     Sequence-level artifact: context/. (ref/ was scaffolded too until 2026.03;
+     a job that has one keeps it, and the law still reads it as the sequence's
+     own dir, never as a facet called "ref".)
+     Below those a sequence holds EITHER facet dirs (facet.xml) OR shot dirs
+     (shot.xml), never both - naming.json tree.sequence_law. Either way they are
+     created lazily, never up front. -->
+<dirtt basename="shots/{{sequence_id}}" name="sequence" version="2026.03"
+       dirname="{{project_root}}/{{project_dir}}" id="sequence-root"
+       username="pipeline" group="artist" perms="02775">
+  <dir basename="context" id="sequence-context"/>
+</dirtt>

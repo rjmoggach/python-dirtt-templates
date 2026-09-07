@@ -25,12 +25,12 @@
   },
   "template_sets": [
     {
-      "ref": "studio_project@2026.04",
+      "ref": "studio_project@2026.05",
       "id": "studio_project",
-      "version": "2026.04",
-      "path": "studio_project_2026.04",
+      "version": "2026.05",
+      "path": "studio_project_2026.05",
       "status": "current",
-      "description": "Hybrid AI / live action / design / animation / VFX studio project. Eight top-level nouns (assets, context, lib, media, ref, shots, work + logs/.claude). The shot is a Maya-style project dir. Lazy by design: sequences, shots, assets and user sandboxes are scaffolded per entity, on first use, never up front. 2026.02 added the optional facet level (shots/{seq}[/{facet}]/{shot}); 2026.03 stopped scaffolding ref/ at the sequence and facet level; 2026.04 added c4d/ and lib/dcc/c4d/ to the shot. Source of truth: studio-pipeline/templates/studio_project (this is the published copy).",
+      "description": "Hybrid AI / live action / design / animation / VFX studio project. Eight top-level nouns (assets, context, lib, media, ref, shots, work + logs/.claude). The shot is a Maya-style project dir. Lazy by design: sequences, shots, assets and user sandboxes are scaffolded per entity, on first use, never up front. 2026.02 added the optional facet level (shots/{seq}[/{facet}]/{shot}); 2026.03 stopped scaffolding ref/ at the sequence and facet level; 2026.04 added c4d/ and lib/dcc/c4d/ to the shot; 2026.05 added pub/versions/ to the asset (the published, versioned product a shot references; work/ is where it is made). Source of truth: studio-pipeline/templates/studio_project (this is the published copy).",
       "entities": {
         "project": {
           "template": "project.xml",
@@ -54,7 +54,7 @@
         },
         "asset": {
           "template": "asset.xml",
-          "actions": 3,
+          "actions": 5,
           "run": "once per asset"
         },
         "user": {
@@ -135,7 +135,8 @@
         "Re-running a template over an existing tree: directories skip, but <file> nodes refuse to overwrite. Wrappers need a skip-existing-files pass for idempotence.",
         "chown applies only when run as root; chmod always. A non-root scaffold has correct modes and wrong owners.",
         "The facet level is optional and invisible to shot.xml: pass shot_parent as shots/{seq} or shots/{seq}/{facet}; the shot's own action count does not change.",
-        "Re-running shot.xml over an existing shot with skip-existing-files adds new dirs (2026.04: c4d/, lib/dcc/c4d/) and leaves workspace.mel alone."
+        "Re-running shot.xml over an existing shot with skip-existing-files adds new dirs (2026.04: c4d/, lib/dcc/c4d/) and leaves workspace.mel alone.",
+        "An asset is ref/ + work/ + pub/versions/ (2026.05). Re-running asset.xml over an existing asset with skip-existing-files adds pub/versions/."
       ]
     },
     {
@@ -233,7 +234,7 @@
         "Re-running a template over an existing tree: directories skip, but <file> nodes refuse to overwrite. Wrappers need a skip-existing-files pass for idempotence.",
         "chown applies only when run as root; chmod always. A non-root scaffold has correct modes and wrong owners."
       ],
-      "superseded_by": "studio_project@2026.04"
+      "superseded_by": "studio_project@2026.05"
     },
     {
       "ref": "filmcraft_project@2026.07",
@@ -341,9 +342,9 @@
   ],
   "migrations": [
     {
-      "file": "migrations/2026.01_to_2026.04.json",
+      "file": "migrations/2026.01_to_2026.05.json",
       "from": "studio_project@2026.01",
-      "to": "studio_project@2026.04",
+      "to": "studio_project@2026.05",
       "status": "current",
       "note": "Additive: no path moves. New dirs are created; a sequence-level ref/ that 2026.01 made is an orphan -- kept and reported, never deleted. Facets are opt-in per sequence and never inferred by a migration."
     },

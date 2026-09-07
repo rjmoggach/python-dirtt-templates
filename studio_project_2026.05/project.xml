@@ -9,7 +9,7 @@ Spec: docs/template-spec.md (Studio-Pipeline) / README.md + index.json (python-d
 into lib/dirtt/ (raw copy - dirtt substitutes placeholders in href content, so the
 wrapper copies, not dirtt).
 -->
-<dirtt basename="{{project_dir}}" name="studio_project" version="2026.04"
+<dirtt basename="{{project_dir}}" name="studio_project" version="2026.05"
        dirname="{{project_root}}" id="project-root"
        username="pipeline" group="artist" perms="02755">
 

@@ -15,16 +15,16 @@ reads to discover what exists.
 - **`index.json`** — the registry. Every template set with its id, version,
   per-entity templates, required variables, and action counts; plus the
   job-root law. Read this first; do not hardcode template paths.
-- **`studio_project_2026.04/`** — **the current set.** A hybrid AI / live
+- **`studio_project_2026.05/`** — **the current set.** A hybrid AI / live
   action / design / animation / VFX studio project. Eight top-level nouns
   (`assets context lib media ref shots work` + `logs .claude`). The shot is a
   Maya-style project directory with a scene home per DCC (`c4d houdini maya
   nuke`). Six per-entity templates: project, sequence, facet (optional:
-  `shots/{seq}[/{facet}]/{shot}`), shot, asset, user. Published from
+  `shots/{seq}[/{facet}]/{shot}`), shot, asset (`ref/ work/ pub/versions/`), user. Published from
   `studio-pipeline/templates/studio_project`, which is the source of truth.
-- **`studio_project_2026.01/`** — superseded by 2026.04 (2026.02 facets,
-  2026.03 no sequence/facet `ref/`, 2026.04 `c4d/`). Kept so a tree stamped
-  `studio_project@2026.01` can be read and migrated (`migrations/2026.01_to_2026.04.json`).
+- **`studio_project_2026.01/`** — superseded by 2026.05 (2026.02 facets,
+  2026.03 no sequence/facet `ref/`, 2026.04 `c4d/`, 2026.05 asset `pub/versions/`). Kept so a tree stamped
+  `studio_project@2026.01` can be read and migrated (`migrations/2026.01_to_2026.05.json`).
 - **`studio_project_2015/`** — a VFX/post structure as deployed at a studio
   circa 2015 (`library/media/production/work/shots/flame`). Kept as a working
   historical snapshot; updated only enough to run with dirtt 1.0.
@@ -57,18 +57,18 @@ per platform (macOS / Linux / Windows). Nothing ever stores an absolute path.
 python3 -c "import json;[print(s['ref'],'->',s['path']) for s in json.load(open('index.json'))['template_sets']]"
 
 # preview — always dry-run first
-dirtt create -t studio_project_2026.04/project.xml --dry-run \
+dirtt create -t studio_project_2026.05/project.xml --dry-run \
     --var project_root=/Volumes/jobs --var project_dir=D26003-BIG_SUR \
     --var job_number=D26003 --var project_code=bsr \
     --var project_name=big_sur --var project_label="Big Sur" \
     --var created_by=rm
 
 # build the project, then add entities lazily as work arrives
-dirtt create -t studio_project_2026.04/sequence.xml \
+dirtt create -t studio_project_2026.05/sequence.xml \
     --var project_root=/Volumes/jobs --var project_dir=D26003-BIG_SUR \
     --var sequence_id=bsr010
 
-dirtt create -t studio_project_2026.04/shot.xml \
+dirtt create -t studio_project_2026.05/shot.xml \
     --var project_root=/Volumes/jobs --var project_dir=D26003-BIG_SUR \
     --var sequence_id=bsr010 --var shot=0010
 ```
@@ -83,7 +83,7 @@ sequences with zero shot directories.
 List a template's variables with:
 
 ```console
-dirtt placeholders -t studio_project_2026.04/shot.xml
+dirtt placeholders -t studio_project_2026.05/shot.xml
 ```
 
 ⚠️ `dirtt placeholders` does not traverse into `href`'d seed files, so it

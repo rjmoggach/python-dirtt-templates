@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!-- one shot: a Maya-style project dir (run once per shot).
+     vars: project_root, project_dir, shot_parent, shot
+     shot_parent is shots/{seq} or shots/{seq}/{facet}, built by
+     studio_naming.shot_path() - never joined here, because the facet is optional.
+     Shot dir is SHORT (0010); the full id bsr010_0010 (or mms_lemon_0010) lives
+     in filenames only.
+     workspace.mel maps Maya tokens to this exact layout.
+     Lazy extras appear on first use: comfy/, photoshop/, other DCC dirs.
+     DCC scene homes scaffolded: c4d (2026.04), houdini, maya, nuke.
+     Craft image dirs are lowercase: 2d, cg, genai, plates. Maya-native cache dir
+     names (nCache, renderData, iprImages, 3dPaintTextures) keep their canonical case. -->
+<dirtt basename="{{shot_parent}}/{{shot}}" name="shot" version="2026.04"
+       dirname="{{project_root}}/{{project_dir}}" id="shot-root"
+       username="pipeline" group="artist" perms="02775">
+
+  <file basename="workspace.mel" href="files/workspace.mel" perms="0644"/>
+
+  <dir basename="audio" id="shot-audio">
+    <dir basename="mix"/><dir basename="vo"/><dir basename="sfx"/><dir basename="music"/>
+  </dir>
+  <dir basename="context" id="shot-context"/>
+
+  <dir basename="data" id="shot-data">
+    <dir basename="cam"/><dir basename="chan"/><dir basename="geo"/>
+    <dir basename="cache">
+      <dir basename="abc"/><dir basename="bgeo"/><dir basename="fluid"/>
+      <dir basename="nCache"/><dir basename="vdb"/>
+      <dir basename="renderData">
+        <dir basename="fur"/><dir basename="iprImages"/><dir basename="shaders"/>
+      </dir>
+    </dir>
+  </dir>
+
+  <dir basename="c4d" id="shot-c4d"/>
+  <dir basename="houdini" id="shot-houdini"/>
+  <dir basename="maya" id="shot-maya"/>
+  <dir basename="nuke" id="shot-nuke"/>
+
+  <dir basename="images" id="shot-images">
+    <dir basename="2d" id="shot-images-2d">
+      <dir basename="cmp"/><dir basename="dmp"/><dir basename="pnt"/><dir basename="roto"/>
+    </dir>
+    <dir basename="cg" id="shot-images-cg">
+      <dir basename="render"/>
+      <dir basename="textures"><dir basename="3dPaintTextures"/></dir>
+    </dir>
+    <dir basename="genai" id="shot-images-genai"/>
+    <dir basename="plates" id="shot-images-plates"/>
+  </dir>
+
+  <dir basename="videos" id="shot-videos">
+    <dir basename="cg"/><dir basename="edit"/><dir basename="genai"/>
+  </dir>
+
+  <dir basename="lib" id="shot-lib">
+    <dir basename="cfg"><dir basename="env"/></dir>
+    <dir basename="dcc">
+      <dir basename="c4d"/>
+      <dir basename="houdini"/>
+      <dir basename="maya">
+        <dir basename="mel"/><dir basename="python"/><dir basename="scripts"/><dir basename="templates"/>
+      </dir>
+      <dir basename="nuke"/><dir basename="ue4"/>
+    </dir>
+    <dir basename="ocio"><dir basename="luts"/></dir>
+    <dir basename="scripts"/>
+  </dir>
+
+</dirtt>

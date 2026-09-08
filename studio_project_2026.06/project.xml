@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!--
+studio_project@2026.02 - project scaffold, cut from D26002_EXAMPLE v11 (the blessed tree).
+Run once per project, as root on the NAS.
+vars: project_root, project_dir, project_code, project_name, project_label, created_by
+  project_dir = job-number form: D26002_PROJECT_NAME
+Spec: docs/template-spec.md (Studio-Pipeline) / README.md + index.json (python-dirtt-templates). The scaffold wrapper also copies this template set
+into lib/dirtt/ (raw copy - dirtt substitutes placeholders in href content, so the
+wrapper copies, not dirtt).
+-->
+<dirtt basename="{{project_dir}}" name="studio_project" version="2026.06"
+       dirname="{{project_root}}" id="project-root"
+       username="pipeline" group="artist" perms="02755">
+
+  <dir basename=".claude" id="claude" perms="02775"/>
+
+  <dir basename="assets" id="assets" perms="02775">
+    <dir basename="char" id="assets-char"/>
+    <dir basename="prop" id="assets-prop"/>
+    <dir basename="set" id="assets-set"/>
+    <dir basename="vehicle" id="assets-vehicle"/>
+    <dir basename="fx" id="assets-fx"/>
+    <dir basename="look" id="assets-look"/>
+    <dir basename="hdri" id="assets-hdri"/>
+  </dir>
+
+  <dir basename="context" id="context" perms="02775"/>
+
+  <dir basename="lib" id="lib" username="pipeline" group="pipeline" perms="02755">
+    <dir basename="bin" id="lib-bin"/>
+    <dir basename="cfg" id="lib-cfg">
+      <file basename="project.json" href="files/project.json" perms="0644"/>
+      <file basename="users.json" href="files/users.json" perms="0644"/>
+    </dir>
+    <dir basename="dirtt" id="lib-dirtt">
+      <file basename="README.md" href="files/dirtt_readme.md" perms="0644"/>
+      <dir basename="migrations" id="lib-dirtt-migrations"/>
+    </dir>
+    <dir basename="dcc" id="lib-dcc">
+      <dir basename="blender" id="lib-dcc-blender"/>
+      <dir basename="houdini" id="lib-dcc-houdini"/>
+      <dir basename="maya" id="lib-dcc-maya">
+        <dir basename="mel"/><dir basename="python"/><dir basename="scripts"/><dir basename="templates"/>
+      </dir>
+      <dir basename="nuke" id="lib-dcc-nuke">
+        <dir basename="gizmos"/><dir basename="python"/><dir basename="scripts"/><dir basename="templates"/>
+      </dir>
+      <dir basename="unreal" id="lib-dcc-unreal"/>
+    </dir>
+    <dir basename="ocio" id="lib-ocio">
+      <dir basename="cdls" id="lib-ocio-cdls"/>
+      <dir basename="luts" id="lib-ocio-luts">
+        <file basename="README.md" href="files/ocio_luts_readme.md" perms="0644"/>
+      </dir>
+    </dir>
+  </dir>
+
+  <dir basename="logs" id="logs" perms="02775"/>
+
+  <dir basename="media" id="media" perms="02775">
+    <dir basename="archives" id="media-archives"/>
+    <dir basename="dailies" id="media-dailies"/>
+    <dir basename="deliveries" id="media-deliveries" group="production"/>
+    <dir basename="elements" id="media-elements"/>
+    <dir basename="io" id="media-io">
+      <dir basename="in" id="media-io-in"/>
+      <dir basename="out" id="media-io-out"/>
+    </dir>
+    <dir basename="masters" id="media-masters" group="production"/>
+    <dir basename="ocn" id="media-ocn" username="pipeline" group="pipeline" perms="02755"/>
+    <dir basename="vendor" id="media-vendor"/>
+  </dir>
+
+  <dir basename="ref" id="ref" perms="02777"/>
+
+  <dir basename="shots" id="shots" perms="02775"/>
+
+  <dir basename="work" id="work" perms="02775">
+    <dir basename="audio" id="work-audio"><dir basename="bounces"/></dir>
+    <dir basename="color" id="work-color">
+      <dir basename="grain"/><dir basename="stills"/>
+      <dir basename="luts">
+        <file basename="README.md" href="files/color_luts_readme.md" perms="0644"/>
+      </dir>
+    </dir>
+    <dir basename="design" id="work-design">
+      <dir basename="exports"/><dir basename="fonts"/><dir basename="graphics"/><dir basename="stock"/>
+    </dir>
+    <dir basename="genai" id="work-genai"/>
+    <dir basename="offline" id="work-offline">
+      <dir basename="audio"/><dir basename="exports"/>
+    </dir>
+    <dir basename="online" id="work-online">
+      <dir basename="exports"/>
+      <dir basename="flame" perms="02777"/>
+      <dir basename="prep" id="work-online-prep">
+        <dir basename="artwork"/><dir basename="audio"/><dir basename="edl_xml"/>
+        <dir basename="fonts"/><dir basename="legals"/><dir basename="offline"/><dir basename="slates"/>
+      </dir>
+    </dir>
+    <dir basename="production" id="work-production" group="production">
+      <dir basename="business" id="work-production-business" perms="02770">
+        <dir basename="actuals"/><dir basename="bids"/><dir basename="crew"/>
+        <dir basename="legal"/><dir basename="schedules"/>
+      </dir>
+      <dir basename="notes" id="work-production-notes">
+        <dir basename="client"/><dir basename="director"/>
+      </dir>
+      <dir basename="shotstills"/><dir basename="slates"/><dir basename="wip"/>
+    </dir>
+    <dir basename="shoot" id="work-shoot">
+      <dir basename="hdri"/><dir basename="notes"/><dir basename="reports"/>
+      <dir basename="scans"/><dir basename="stills"/><dir basename="survey"/>
+    </dir>
+    <dir basename="user" id="work-user"/>
+    <dir basename="writing" id="work-writing">
+      <dir basename="bible"/><dir basename="builds"/><dir basename="scenes"/>
+      <dir basename="notes"><dir basename="cut"/></dir>
+      <dir basename="reports"/>
+    </dir>
+  </dir>
+
+</dirtt>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!-- one facet of one sequence (run once per facet).
+     vars: project_root, project_dir, sequence_id, facet   e.g. sequence_id=mms, facet=lemon
+     A facet is the thing a job actually varies by - a flavour, a product line, a
+     language cut. It is OPTIONAL: a sequence either has facets or has shots
+     directly, never both (naming.json tree.sequence_law). Same artifact a
+     sequence carries (context/), because a facet is a sequence's worth of
+     work; ref/ stopped being scaffolded in 2026.03. -->
+<dirtt basename="shots/{{sequence_id}}/{{facet}}" name="facet" version="2026.03"
+       dirname="{{project_root}}/{{project_dir}}" id="facet-root"
+       username="pipeline" group="artist" perms="02775">
+  <dir basename="context" id="facet-context">
+    <file basename="facet.json" href="files/facet.json" perms="0644"/>
+  </dir>
+</dirtt>

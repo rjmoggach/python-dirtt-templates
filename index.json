@@ -25,11 +25,127 @@
   },
   "template_sets": [
     {
+      "ref": "studio_project@2026.06",
+      "id": "studio_project",
+      "version": "2026.06",
+      "path": "studio_project_2026.06",
+      "status": "current",
+      "description": "Hybrid AI / live action / design / animation / VFX studio project. Eight top-level nouns (assets, context, lib, media, ref, shots, work + logs/.claude). The shot is a Maya-style project dir. Lazy by design: sequences, shots, assets and user sandboxes are scaffolded per entity, on first use, never up front. 2026.02 added the optional facet level (shots/{seq}[/{facet}]/{shot}); 2026.03 stopped scaffolding ref/ at the sequence and facet level; 2026.04 added c4d/ and lib/dcc/c4d/ to the shot; 2026.05 added pub/versions/ to the asset; 2026.06 added the hdri asset type (assets/hdri/, law 2026.08) (the published, versioned product a shot references; work/ is where it is made). Source of truth: studio-pipeline/templates/studio_project (this is the published copy).",
+      "entities": {
+        "project": {
+          "template": "project.xml",
+          "actions": 107,
+          "run": "once per project"
+        },
+        "sequence": {
+          "template": "sequence.xml",
+          "actions": 2,
+          "run": "once per sequence"
+        },
+        "facet": {
+          "template": "facet.xml",
+          "actions": 3,
+          "run": "once per facet (optional level: a sequence has facets or shots, never both)"
+        },
+        "shot": {
+          "template": "shot.xml",
+          "actions": 58,
+          "run": "once per shot"
+        },
+        "asset": {
+          "template": "asset.xml",
+          "actions": 5,
+          "run": "once per asset"
+        },
+        "user": {
+          "template": "user.xml",
+          "actions": 2,
+          "run": "once per artist"
+        }
+      },
+      "vars": {
+        "project": [
+          "created_by",
+          "job_number",
+          "project_code",
+          "project_dir",
+          "project_label",
+          "project_name",
+          "project_root"
+        ],
+        "sequence": [
+          "project_dir",
+          "project_root",
+          "sequence_id"
+        ],
+        "facet": [
+          "created",
+          "created_by",
+          "facet",
+          "facet_label",
+          "project_dir",
+          "project_root",
+          "sequence_id"
+        ],
+        "shot": [
+          "project_dir",
+          "project_root",
+          "shot",
+          "shot_parent"
+        ],
+        "asset": [
+          "asset_name",
+          "asset_type",
+          "project_dir",
+          "project_root"
+        ],
+        "user": [
+          "project_dir",
+          "project_root",
+          "user"
+        ],
+        "note": "`dirtt placeholders` under-reports project.xml: it does not traverse into href'd seed files, so job_number/project_code/project_name/project_label/created_by (consumed by files/project.json and files/users.json) do not appear in its output. This list is the truth."
+      },
+      "seed_files": [
+        "files/color_luts_readme.md",
+        "files/dirtt_readme.md",
+        "files/facet.json",
+        "files/ocio_luts_readme.md",
+        "files/project.json",
+        "files/users.json",
+        "files/workspace.mel"
+      ],
+      "asset_types": [
+        "char",
+        "prop",
+        "set",
+        "vehicle",
+        "fx",
+        "look",
+        "hdri"
+      ],
+      "verified": {
+        "dirtt": "studio_scaffold planner (dirtt-compatible XML; dirtt CLI not run)",
+        "date": "2026-09-07",
+        "dtd_valid": true,
+        "law": "studio-pipeline spec/naming.json 2026.08"
+      },
+      "notes": [
+        "dirtt substitutes {{vars}} inside href'd file CONTENT. A scaffold wrapper that pins this template set into the project's lib/dirtt/ must RAW-copy it, never route it through dirtt href, or the pinned copy loses its placeholders.",
+        "A literal '}}' anywhere in a template, XML comments included, is a dirtt TemplateError.",
+        "Re-running a template over an existing tree: directories skip, but <file> nodes refuse to overwrite. Wrappers need a skip-existing-files pass for idempotence.",
+        "chown applies only when run as root; chmod always. A non-root scaffold has correct modes and wrong owners.",
+        "The facet level is optional and invisible to shot.xml: pass shot_parent as shots/{seq} or shots/{seq}/{facet}; the shot's own action count does not change.",
+        "Re-running shot.xml over an existing shot with skip-existing-files adds new dirs (2026.04: c4d/, lib/dcc/c4d/) and leaves workspace.mel alone.",
+        "An asset is ref/ + work/ + pub/versions/ (2026.05). Re-running asset.xml over an existing asset with skip-existing-files adds pub/versions/."
+      ]
+    },
+    {
       "ref": "studio_project@2026.05",
       "id": "studio_project",
       "version": "2026.05",
       "path": "studio_project_2026.05",
-      "status": "current",
+      "status": "superseded",
       "description": "Hybrid AI / live action / design / animation / VFX studio project. Eight top-level nouns (assets, context, lib, media, ref, shots, work + logs/.claude). The shot is a Maya-style project dir. Lazy by design: sequences, shots, assets and user sandboxes are scaffolded per entity, on first use, never up front. 2026.02 added the optional facet level (shots/{seq}[/{facet}]/{shot}); 2026.03 stopped scaffolding ref/ at the sequence and facet level; 2026.04 added c4d/ and lib/dcc/c4d/ to the shot; 2026.05 added pub/versions/ to the asset (the published, versioned product a shot references; work/ is where it is made). Source of truth: studio-pipeline/templates/studio_project (this is the published copy).",
       "entities": {
         "project": {
@@ -137,7 +253,8 @@
         "The facet level is optional and invisible to shot.xml: pass shot_parent as shots/{seq} or shots/{seq}/{facet}; the shot's own action count does not change.",
         "Re-running shot.xml over an existing shot with skip-existing-files adds new dirs (2026.04: c4d/, lib/dcc/c4d/) and leaves workspace.mel alone.",
         "An asset is ref/ + work/ + pub/versions/ (2026.05). Re-running asset.xml over an existing asset with skip-existing-files adds pub/versions/."
-      ]
+      ],
+      "superseded_by": "studio_project@2026.06"
     },
     {
       "ref": "studio_project@2026.01",
@@ -342,9 +459,9 @@
   ],
   "migrations": [
     {
-      "file": "migrations/2026.01_to_2026.05.json",
+      "file": "migrations/2026.01_to_2026.06.json",
       "from": "studio_project@2026.01",
-      "to": "studio_project@2026.05",
+      "to": "studio_project@2026.06",
       "status": "current",
       "note": "Additive: no path moves. New dirs are created; a sequence-level ref/ that 2026.01 made is an orphan -- kept and reported, never deleted. Facets are opt-in per sequence and never inferred by a migration."
     },

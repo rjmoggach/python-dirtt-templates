@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!-- one asset (run on first use).
+     vars: project_root, project_dir, asset_type, asset_name
+     asset_type: char prop set vehicle fx look hdri (aliases: env->set, style->look)
+     asset_name: lowercase snake; a variant sibling appends a trailing facet: name__variant
+     Medium facets (genai/, 3d/, 2d/) and coverage facets are created lazily on first use.
+     pub/versions/ (2026.05): the published, versioned product of the asset, what a shot
+     references. work/ is where it is made; pub/ is what leaves. -->
+<dirtt basename="assets/{{asset_type}}/{{asset_name}}" name="asset" version="2026.05"
+       dirname="{{project_root}}/{{project_dir}}" id="asset-root"
+       username="pipeline" group="artist" perms="02775">
+  <dir basename="ref" id="asset-ref"/>
+  <dir basename="work" id="asset-work"/>
+  <dir basename="pub" id="asset-pub">
+    <dir basename="versions" id="asset-pub-versions"/>
+  </dir>
+</dirtt>

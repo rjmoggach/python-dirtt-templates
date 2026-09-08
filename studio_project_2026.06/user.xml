@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dirtt PUBLIC "-//STUDIO//DTD dirtt 1.0//EN" "http://rjmoggach.github.io/python-dirtt/dtds/dirtt.dtd">
+<!-- one artist sandbox (lazy, on first assignment).
+     vars: project_root, project_dir, user   (actor id from lib/cfg/users.json, e.g. rm) -->
+<dirtt basename="work/user/{{user}}" name="user" version="2026.01"
+       dirname="{{project_root}}/{{project_dir}}" id="user-root"
+       username="pipeline" group="artist" perms="02775">
+  <dir basename="scratch"/>
+</dirtt>
